@@ -1,9 +1,9 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
 *check_cycle - checks for a cycle in a singly linked list
 *@list: parameter
-*Return: 0 success, 1 for failure
+*Return: 1 success, 0 for failure
 */
 int check_cycle(listint_t *list)
 {
@@ -33,9 +33,9 @@ break;
 
 list = list->next;
 }
-return (0);
+return (1);
 }
 }
 
-return (1);
+return (0);
 }
