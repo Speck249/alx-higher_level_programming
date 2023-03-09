@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
 *insert_node - inserts a new node
 *@head: first parameter
