@@ -6,7 +6,8 @@ def element_at(my_list, idx):
 
     n = len(my_list)
 
-    elif idx >= n:
+    if idx >= n:
         return (None)
+
     else:
-        return(my_list[idx])
+        return my_list[idx]
