@@ -7,7 +7,7 @@ def new_in_list(my_list, idx, element):
     
         n = len(my_list)
     
-        elif idx >= n:
+        if idx >= n:
             return my_list
         else:
             new_list = my_list.copy()
