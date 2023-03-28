@@ -1,45 +1,48 @@
 #!/usr/bin/python3
-"""Python Classes and Objects."""
+"""Python Classes & Objects."""
+
 
 class Square:
-    """Creates an empty class Square which defines a square."""
+    """Creates a class."""
 
     def __init__(self, size=0):
-        """The init method instantiates the empty class
-        with a new object.
+        """Instantiates new class.
         Args:
-            size = size of the square.
+            size: size of the square.
         Raises:
             TypeError: if size is not an integer.
-            ValueError: if the value of size is negative.
+            ValueError: if value of size is negative.
         """
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+
         self.__size = size
 
     def area(self):
-        """Computes the area of the square.
-        Prints result.
+        """
+        Computes area of square from given size.
+        Returns: area of square.
         """
 
-        ar = self.__size ** 2
-        return ar
+        result = self.__size ** 2
+        return result
  
     @property
     def size(self):
-        """Gets value of size object."""
+        """Retrieves value of size."""
 
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Sets the value of size object."""
+        """Sets value of size object."""
 
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
+
         self.__size = value
