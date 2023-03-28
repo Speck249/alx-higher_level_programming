@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""Python Classes and Objects."""
+"""Python Classes & Objects."""
+
 
 class Square:
-    """Creates an empty class which defines a square."""
+    """Creates a class."""
 
     def __init__(self, size):
-        """The init method instantiates the empty class
-        with a new object.
-
-        Args:
-            size = size of the square.
+        """Instantiates new class.
+        Args: size - size of the square.
         """
 
         self.__size = size
