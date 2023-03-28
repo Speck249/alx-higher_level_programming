@@ -2,10 +2,14 @@
 """Class defines a square."""
 
 class Square:
-    """A new class, Square, is created.
-    The init method then instantiates an object,
-    size, in the class Square.
-    """
+    """Creates an empty class."""
 
     def __init__(self, size):
+    """The init method instantiates the class
+    with a new object.
+
+    Args:
+    size = size of the square.
+    """
+
         self.__size = size
