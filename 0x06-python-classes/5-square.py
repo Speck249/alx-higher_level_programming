@@ -48,6 +48,7 @@ class Square:
        """If value of size is positive, method prints
        a square."""
 
+       i = j = 0
        if self.__size < 0:
            print()
        else:
