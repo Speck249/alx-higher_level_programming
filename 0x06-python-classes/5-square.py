@@ -3,7 +3,7 @@
 
 class Square:
     """Creates an empty class Square which defines a square."""
-    
+
     def __init__(self, size=0):
         """The init method instantiates the empty class
         with a new object.
@@ -27,7 +27,7 @@ class Square:
 
         ar = self.__size ** 2
         return ar
- 
+
     @property
     def size(self):
         """Gets value of size object."""
