@@ -29,12 +29,14 @@ class Square:
 
         result = self.__size ** 2
         return result
+
  
     @property
     def size(self):
         """Method retrieves value of size."""
 
         return self.__size
+
 
     @size.setter
     def size(self, value):
