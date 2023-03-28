@@ -3,6 +3,7 @@
 
 class Square:
     """Creates an empty class Square which defines a square."""
+
     def __init__(self, size=0):
         """The init method instantiates the empty class
         with a new object.
@@ -19,6 +20,14 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    def area(self):
+        """Computes the area of the square.
+        Prints result.
+        """
+
+        ar = self.__size ** 2
+        return ar
+ 
     @property
     def size(self):
         """Gets value of size object."""
@@ -34,11 +43,3 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
-     def area(self):
-        """Computes the area of the square.
-        Prints result.
-        """
-
-        ar = self.__size ** 2
-        return ar
