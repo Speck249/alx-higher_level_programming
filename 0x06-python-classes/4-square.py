@@ -32,13 +32,13 @@ class Square:
  
     @property
     def size(self):
-        """Retrieves value of size."""
+        """Method retrieves value of size."""
 
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Sets value of size object."""
+        """Method sets value of size."""
 
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
