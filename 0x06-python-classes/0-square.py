@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Class defines square."""
-
 class Square:
-    """Statement creates an empty class."""
+    """Class Square which defines a square.
+    """
     pass
