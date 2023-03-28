@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-"""Python Classes and Objects."""
+"""Python Classes & Objects."""
+
 
 class Square:
-    """Creates en empty class Square which defines a square."""
+    """Creates a class."""
 
     def __init__(self, size=0):
-        """The init method instantiates the empty class
-        with a new object.
-
+        """Instantiates new class.
         Args:
-            size = size of the square.
-
+            size: size of the square.
         Raises:
             TypeError: if size is not an integer.
-            ValueError: if the value of size is negative.
+            ValueError: if value of size is negative.
         """
 
         self.__size = size
