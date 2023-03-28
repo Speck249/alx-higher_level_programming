@@ -65,7 +65,7 @@ class Square:
     def my_print(self):
         """Method prints square."""
 
-        if self.__size == 0:
+        if self.size == 0:
             print()
         for i in range(self.position[1]):
             print()
