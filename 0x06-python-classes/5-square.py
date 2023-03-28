@@ -46,9 +46,8 @@ class Square:
         result = self.__size ** 2
         return result
 
-
     def my_print(self):
-        """ Method prints square according"""
+        """Method prints square."""
 
         if not self.__size:
             print()
