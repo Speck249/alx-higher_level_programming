@@ -3,7 +3,7 @@
 
 class Square:
     """Creates an empty class Square which defines a square."""
-    i - j = 0
+    
     def __init__(self, size=0):
         """The init method instantiates the empty class
         with a new object.
@@ -36,7 +36,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """Sets the value of size object."""
+        """Sets value of size object."""
 
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
