@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module instantiates new class."""
+"""Module creates new class"""
 
 
 class Rectangle:
-    """Creates a class."""
+    """Creates class"""
 
     def __init__(self, width=0, height=0):
         """Instantiates the new class.
@@ -14,6 +14,7 @@ class Rectangle:
             TypeError: if width and height are not an integer.
             ValueError: if width and height are less than 0.
         """
+
         self.__width= width
         self.__height = height
 
@@ -39,7 +40,7 @@ class Rectangle:
 
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """Method sets height of rectangle."""
 
