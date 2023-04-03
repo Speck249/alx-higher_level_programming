@@ -53,7 +53,7 @@ class Rectangle:
 
         Returns:
             width of a rectangle.
-        
+ 
         """
 
         return self.__height
