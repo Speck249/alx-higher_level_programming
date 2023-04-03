@@ -6,27 +6,40 @@ class Rectangle:
     """Creates class"""
 
     def __init__(self, width=0, height=0):
-        """Instantiates the new class.
+        """Instantiates a new class.
+
         Args:
-            width: width of the rectangle.
-            height: height of the rectangle.
-        Raises:
-            TypeError: if width and height are not an integer.
-            ValueError: if width and height are less than 0.
+            width: first parameter.
+            height: second parameter.
+
         """
 
-        self.__width= width
-        self.__height = height
+        self.width= width
+        self.height = height
 
     @property
     def width(self):
-        """Method retrieves width of rectangle"""
+        """Method retrieves width.
+
+        Returns:
+            width of a rectangle.
+
+        """
 
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Method sets width of rectangle."""
+        """Method sets width.
+
+        Args:
+            value: width of the rectangle.
+
+        Raises:
+            TypeError: if width is not an integer.
+            ValueError: if width is less than 0.
+
+        """
 
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
@@ -36,13 +49,27 @@ class Rectangle:
 
     @property
     def height(self):
-        """Method retrieves height of rectangle"""
+        """Method retrieves height.
+
+        Returns:
+            width of a rectangle.
+        
+        """
 
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Method sets height of rectangle."""
+        """Method sets height of rectangle.
+
+        Args:
+            value: height of the rectangle.
+
+        Raises:
+            TypeError: if height is not an integer.
+            ValueError: if height is less than 0.
+
+        """
 
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
