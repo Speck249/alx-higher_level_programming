@@ -2,5 +2,6 @@
 """Module creates class."""
 
 class Rectangle:
-    """Creates empty class."""
+    """Creates empty class.
+    """
     pass
