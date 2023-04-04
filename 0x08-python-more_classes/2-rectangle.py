@@ -82,7 +82,7 @@ class Rectangle:
        """
        
        if self.width != 0 or self.height != 0:
-           output = (2 * self.width) + (2 * self.height)
+           output = 2 * (self.width + self.height)
            return output
        else:
            return 0
