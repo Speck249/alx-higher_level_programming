@@ -88,13 +88,17 @@ class Rectangle:
            return 0
 
     def __str__(self):
-       """Method prints rectangle."""
+        """Method prints rectangle.
+
+        Returns:
+        Rectangle: if width and height are not 0.
+        """
 
         rectangle = ""
 
         if self.width != 0 or self.height != 0:
-            for i in range(self.width):
-                for j in range(self.height):
+            for i in range(self.height):
+                for j in range(self.width):
                     print("#", end="")
                 print()
         else:
