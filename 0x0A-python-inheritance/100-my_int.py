@@ -12,5 +12,5 @@ class MyInt(int):
 
 
     def __ne__(self, other):
-        """Runs equality check."""
+        """Runs negation check."""
         return int.__eq__(self, other)
