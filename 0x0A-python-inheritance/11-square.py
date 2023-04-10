@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module inherits from Rectanlge."""
+"""Module presents methods that return area & square description."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
@@ -16,12 +16,14 @@ class Square(Rectangle):
         self.__size = size
         """Sets private class instance."""
 
+
     def area(self):
         """Computes area of square.
         Returns: area of square.
         """
  
         return super().area()
+
 
     def __str__(self):
         """Dunder method returns string representation."""
