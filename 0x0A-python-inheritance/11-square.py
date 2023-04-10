@@ -15,3 +15,15 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
         """Sets private class instance."""
+
+    def area(self):
+        """Computes area of square.
+        Returns: area of square.
+        """
+ 
+        return super().area()
+
+    def __str__(self):
+        """Dunder method returns string representation."""
+
+        return ("[Square] {:d}/{:d}".format(self.__size, self.__size))
