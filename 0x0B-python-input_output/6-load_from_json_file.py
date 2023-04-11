@@ -1,17 +1,13 @@
 #!/usr/bin/python3
-"""Module presents function that creates Object."""
+"""Module presents function that creates object."""
 import json
 
 
-def load_from_json_file(filename):    
-    """Function creates Object from JSON file.
+def load_from_json_file(filename):
+    """Function creates object from JSON file.
 
     Args:
-        filename: JSON file.
-
-    Raises:
-        FileNotFoundError: non-existing file.
-        ValueError: wrong value.
+        filename: JSON file
     """
 
     with open(filename, 'r') as f:
