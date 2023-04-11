@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module returns dictionary representation."""
-import json
 
 
 class Student:
@@ -16,4 +15,4 @@ class Student:
     def to_json(self):
         """Returns dictionary representation."""
 
-        return self.__dict__
+        return (self.__dict__)
