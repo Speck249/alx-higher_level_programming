@@ -4,13 +4,14 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
-    """Function writes Object to file, using JSON.
+    """Function writes object to file, using JSON.
 
     Args:
         my_obj: to be written into file.
-        filename: to be written to.
+        filename: to be written into.
     """
 
-    with open(filename, 'w', encoding= "utf-8") as f:
+    with open(filename, 'r', encoding="utf-8") as f:
         json.dump(my_obj, f)
+
     f.close()
