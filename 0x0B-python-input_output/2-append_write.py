@@ -1,19 +1,20 @@
-#!/usr/bin/python3 
-"""Module presents function that appends to file."""
+#!/usr/bin/python3
+"""Module presents function that appends into file."""
 
 
 def append_write(filename="", text=""):
-    """Function appends to file.
+    """Function appends into file.
 
     Args:
-        filename: to be appended to.
-        text: to be appended to file.
+       filename: to be appended into.
+       text: to be appended into file.
 
     Returns:
-        length of text.
-    """    
+       length of text.
+       appended text content.
+    """
 
     with open(filename, 'a', encoding="utf-8") as f:
-        return (f.write(text))
+        return f.write(text)
 
     f.close()
