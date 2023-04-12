@@ -32,6 +32,9 @@ class Rectangle:
     def width(self, value):
         """Method sets value of width.
 
+        Args:
+            value: parameter
+
         Raises:
             TypeError: if width is not int.
             ValueError: if width < 0.
@@ -59,6 +62,9 @@ class Rectangle:
     def height(self, value):
         """Method sets value of height.
 
+        Args:
+            value: parameter
+
         Raises:
             TypeError: if height is not int.
             ValueError: if height < 0.
@@ -83,5 +89,8 @@ class Rectangle:
         Returns: perimeter of rectangle.
         """
 
-        result = (2 * self.width) + (2 * self.height)
-        return result
+        if self.width == 0 or self.height == 0:
+            return 0
+
+        else:
+            return (2 * self.width) + (2 * self.height)
