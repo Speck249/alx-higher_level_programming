@@ -6,16 +6,10 @@ class Rectangle:
     """Creates class"""
 
     def __init__(self, width=0, height=0):
-        """Instantiates a new class.
+        """Instantiates new class."""
 
-        Args:
-            width: first parameter.
-            height: second parameter.
-
-        """
-
-        self.width= width
-        self.height = height
+        self.__width= width
+        self.__height = height
 
     @property
     def width(self):
@@ -23,7 +17,6 @@ class Rectangle:
 
         Returns:
             width of a rectangle.
-
         """
 
         return self.__width
@@ -38,10 +31,9 @@ class Rectangle:
         Raises:
             TypeError: if width is not an integer.
             ValueError: if width is less than 0.
-
         """
 
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >= 0')
@@ -53,7 +45,6 @@ class Rectangle:
 
         Returns:
             width of a rectangle.
- 
         """
 
         return self.__height
@@ -71,7 +62,7 @@ class Rectangle:
 
         """
 
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:
             raise ValueError('height must be >= 0')
