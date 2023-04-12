@@ -16,7 +16,7 @@ class Rectangle:
         """Method retrieves width.
 
         Returns:
-            width of a rectangle.
+            width of rectangle.
         """
 
         return self.__width
@@ -26,7 +26,7 @@ class Rectangle:
         """Method sets width.
 
         Args:
-            value: width of the rectangle.
+            value: width of rectangle.
 
         Raises:
             TypeError: if width is not an integer.
@@ -44,7 +44,7 @@ class Rectangle:
         """Method retrieves height.
 
         Returns:
-            width of a rectangle.
+            width of rectangle.
         """
 
         return self.__height
@@ -59,7 +59,6 @@ class Rectangle:
         Raises:
             TypeError: if height is not an integer.
             ValueError: if height is less than 0.
-
         """
 
         if type(value) is not int:
