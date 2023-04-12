@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-"""Module creates new class"""
+"""Module instantiates new class"""
 
 
 class Rectangle:
-    """Creates class"""
+    """Creates new class"""
 
     def __init__(self, width=0, height=0):
-        """Instantiates new class."""
+        """Instantiates new class.
+
+        Args:
+            width: first parameter
+            height: second parameter
+
+        """
 
         self.width= width
         self.height = height
@@ -17,6 +23,7 @@ class Rectangle:
 
         Returns:
             width of rectangle.
+
         """
 
         return self.__width
@@ -31,6 +38,7 @@ class Rectangle:
         Raises:
             TypeError: if width is not an integer.
             ValueError: if width is less than 0.
+
         """
 
         if type(value) is not int:
@@ -45,6 +53,7 @@ class Rectangle:
 
         Returns:
             width of rectangle.
+
         """
 
         return self.__height
@@ -59,6 +68,7 @@ class Rectangle:
         Raises:
             TypeError: if height is not an integer.
             ValueError: if height is less than 0.
+
         """
 
         if type(value) is not int:
