@@ -1,126 +1,102 @@
-Testing Sorting Module (1-my_list)
-***********************************
-Module sorts & prints appended values
+Testing Sorting Module
+**********************
 
+Module sorts & prints appended values
 -------------------------------------
 
 Test Case 0: Import Module
->>>MyList = __import__('1-my_list').MyList
-
-----------------------------------------------
-
-Test Case 1: Documentation
->>>python3 -c print(__import__("1-my_list").__doc__)
->>>python3 -c print(__import__("1-my_list").MyClass.__doc__) 
->>>python3 -c print(__import__("1-my_list").my_function.__doc__)
->>>python3 -c print(__import__("1-my_list").MyClass.my_function.__doc__)
-
-----------------------------------------------
+>>> MyList = __import__('1-my_list').MyList
+-------------------------------------------
 
 Test Case 2: Class Inheritance
->>>return issubclass(MyList, list)
+>>> return issubclass(MyList, list)
 True
+-------------------------------------------
 
-----------------------------------------------
-
-Test Case 3: Append nothing to my_list:
->>>my_list.append()
-
+Test Case 3: 0 Arguments
+>>> my_list.append()
 Traceback (most recent call last):
-  File ****, in <module>
-    my_list.append()
+  ***
 TypeError: append() takes exactly one argument (0 given)
+------------------------------------------
 
------------------------------------------------
-
-Test Case 4: Append, sort & print integers
->>>my_list.append(1)
->>>my_list.append(4)
->>>my_list.append(2)
->>>my_list.append(3)
->>>my_list.append(5)
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 4: Sort & Print integers
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+>>> my_list.print_sorted()
 [1, 4, 2, 3, 5]
 [1, 2, 3, 4, 5]
+------------------------------------------
 
-------------------------------------------------
-Test Case 5: Append, sort & print floats
->>>my_list.append(1.0)
->>>my_list.append(4.0)
->>>my_list.append(2.0)
->>>my_list.append(3.0)
->>>my_list.append(5.0)
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 5: Sort & Print floats
+>>> my_list.append(1.0)
+>>> my_list.append(4.0)
+>>> my_list.append(2.0)
+>>> my_list.append(3.0)
+>>> my_list.append(5.0)
+>>> print(my_list)
+>>> my_list.print_sorted()
 [1.0, 4.0, 2.0, 3.0, 5.0]
 [1.0, 2.0, 3.0, 4.0, 5.0]
+-----------------------------------------
 
--------------------------------------------------
-
-Test Case 6: Append, sort & print negative integers
->>>my_list.append(-1)
->>>my_list.append(-4)
->>>my_list.append(-2)
->>>my_list.append(-3)
->>>my_list.append(-5)
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 6: Sort & Print negative integers
+>>> my_list.append(-1)
+>>> my_list.append(-4)
+>>> my_list.append(-2)
+>>> my_list.append(-3)
+>>> my_list.append(-5)
+>>> print(my_list)
+>>> my_list.print_sorted()
 [-1, -4, -2, -3, -5]
 [-1, -2, -3, -4, -5]
+----------------------------------------
 
--------------------------------------------------
-
-Test Case 7: Append, sort & print the same number
->>>my_list.append(1)
->>>my_list.append(1)
->>>my_list.append(1)
->>>my_list.append(1)
->>>my_list.append(1)
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 7: Sort & Print the same number
+>>> my_list.append(1)
+>>> my_list.append(1)
+>>> my_list.append(1)
+>>> my_list.append(1)
+>>> my_list.append(1)
+>>> print(my_list)
+>>> my_list.print_sorted()
 [1, 1, 1, 1, 1]
 [1, 1, 1, 1, 1]
+---------------------------------------
 
--------------------------------------------------
-
-Test Case 8: Append, sort & print string values
->>>my_list.append('1')
->>>my_list.append('a')
->>>my_list.append('c')
->>>my_list.append('3')
->>>my_list.append('z')
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 8: Sort & Print string values
+>>> my_list.append('1')
+>>> my_list.append('a')
+>>> my_list.append('c')
+>>> my_list.append('3')
+>>> my_list.append('z')
+>>> print(my_list)
+>>> my_list.print_sorted()
 ['1', 'a', 'c', '3', 'z']
 ['1', '3', 'a', 'c', 'z']
+--------------------------------------
 
-------------------------------------------------
-
-Test Case 9: Append, sort & print strings and numbers
->>>my_list.append('1')
->>>my_list.append('a')
->>>my_list.append('c')
->>>my_list.append(3)
->>>my_list.append(5)
->>>print(my_list)
->>>my_list.print_sorted()
+Test Case 9: Sort & print strings and numbers
+>>> my_list.append('1')
+>>> my_list.append('a')
+>>> my_list.append('c')
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+>>> my_list.print_sorted()
 ['1', 'a', 'c', 3, 5]
 Traceback (most recent call last):
-  File ****, in <module>
-    my_list.print_sorted()
-  File "***", line 14, in print_sorted
-    result = sorted(self)
+    ****
 TypeError: unorderable types: str() < int()
-
--------------------------------------------------
+-------------------------------------
 
 Test Case 10: Print non-existing object:
->>>print(my_list1)
-
+>>> print(my_list1)
 Traceback (most recent call last):
-  File ****, in <module>
-    print(my_list1)
+  ****
 NameError: name 'my_list1' is not defined
-
---------------------------------------------------
+------------------------------------
