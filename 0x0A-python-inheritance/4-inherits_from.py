@@ -7,17 +7,15 @@ def inherits_from(obj, a_class):
     of a subclass.
  
     Args:
-        obj: first parameter
-        a_class: second parameter
+        obj: instance
+        a_class: subclass
 
     Returns:
-        returns Boolean value.
+        returns parent class if True.
 
-    Raises:
-        no exceptions are raise.
     """
 
-    if issubclass(a_class, (obj, a_class)):
-        return True
-    else:
+    if type(obj) is a_class:
         return False
+ 
+    return isinstance(obj, a_class)
