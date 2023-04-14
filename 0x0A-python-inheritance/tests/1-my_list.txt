@@ -1,8 +1,5 @@
-Testing Sorting Module
-**********************
-
-Module sorts & prints appended values
--------------------------------------
+Testing 1-my_list.py
+----------------------
 
 Test Case 0: Import Module
 >>> MyList = __import__('1-my_list').MyList
@@ -16,7 +13,7 @@ True
 Test Case 3: 0 Arguments
 >>> my_list.append()
 Traceback (most recent call last):
-  ***
+  ---
 TypeError: append() takes exactly one argument (0 given)
 ------------------------------------------
 
@@ -90,13 +87,13 @@ Test Case 9: Sort & print strings and numbers
 >>> my_list.print_sorted()
 ['1', 'a', 'c', 3, 5]
 Traceback (most recent call last):
-    ****
+    ----
 TypeError: unorderable types: str() < int()
 -------------------------------------
 
 Test Case 10: Print non-existing object:
 >>> print(my_list1)
 Traceback (most recent call last):
-  ****
+     -----
 NameError: name 'my_list1' is not defined
 ------------------------------------
