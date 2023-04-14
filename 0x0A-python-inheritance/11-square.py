@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Modile inherits from Rectangle."""
+"""Module inherits from Rectanlge."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
     """Class inherits from Rectangle."""
- 
+
     def __init__(self, size):
         """Method instantiates class."""
- 
+
         self.integer_validator("size", size)
         """Validates value of size."""
 
@@ -18,12 +18,12 @@ class Square(Rectangle):
 
     def area(self):
         """Computes area of square.
-        Returns: area of square.
+        Returns area of square.
         """
 
         return super().area()
 
     def __str__(self):
-        """Dunder method returns square description."""
+        """Returns square description."""
 
         return ("[Square] {:d}/{:d}".format(self.__size, self.__size))
