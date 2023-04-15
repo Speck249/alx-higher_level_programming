@@ -12,7 +12,6 @@ class Rectangle:
             width: first parameter
             height: second paramter
         """
-
         self.width = width
         self.height = height
 
@@ -45,7 +44,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @property
     def height(self):
@@ -89,8 +87,8 @@ class Rectangle:
         Returns: perimeter of rectangle.
         """
 
-        if self.width == 0 or self.height == 0:
-            return 0
+        if self.width != 0 or self.height != 0:
+            return (2 * self.width) + (2 * self.height)
 
         else:
-            return (2 * self.width) + (2 * self.height)
+            return 0
