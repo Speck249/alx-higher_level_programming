@@ -7,7 +7,6 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Method instantiates new class.
-
         Args:
             width: first parameter
             height: second paramter
@@ -19,7 +18,6 @@ class Rectangle:
     @property
     def width(self):
         """Method retrieves width.
-
         Returns:
             value of width.
         """
@@ -29,10 +27,8 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Method sets value of width.
-
         Args:
             value: parameter
-
         Raises:
             TypeError: if width is not int.
             ValueError: if width < 0.
@@ -46,11 +42,15 @@ class Rectangle:
 
     @property
     def height(self):
-        """Method sets height value.
+        """Method retrieves height."""
 
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """Method sets height value.
         Args:
             value: parameter
-
         Raises:
             TypeError: if height is not int.
             ValueError: if height < 0.
@@ -80,6 +80,7 @@ class Rectangle:
         """Method prints rectangle."""
 
         empty_string = ""
+
         if self.width == 0 and self.height == 0:
             return empty_string
         else:
@@ -87,7 +88,7 @@ class Rectangle:
 
     def __repr__(self):
         """Method returns string representation of rectangle."""
-        
+
         return ("Rectangle({:d}, {:d})".format(self.width, self.height))
 
     def __del__(self):
