@@ -12,6 +12,7 @@ class Rectangle:
             width: first parameter
             height: second paramter
         """
+
         self.width = width
         self.height = height
 
@@ -79,16 +80,15 @@ class Rectangle:
         Returns: area of rectangle.
         """
 
-        result = self.width * self.height
-        return result
+        return self.width * self.height
 
     def perimeter(self):
         """Computes perimeter of rectangle.
         Returns: perimeter of rectangle.
         """
 
-        if self.width != 0 or self.height != 0:
-            return (2 * self.width) + (2 * self.height)
+        if self.width == 0 or self.height == 0:
+            return 0
 
         else:
-            return 0
+            return (2 * self.width) + (2 * self.height)
