@@ -4,10 +4,9 @@
 
 class Rectangle:
     """Creates new class"""
- 
+
     def __init__(self, width=0, height=0):
         """Method instantiates new class.
-
         Args:
             width: first parameter
             height: second paramter
@@ -16,11 +15,9 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def width(self):
         """Method retrieves width.
-
         Returns:
             value of width.
         """
@@ -30,10 +27,8 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Method sets value of width.
-
         Args:
             value: parameter
-
         Raises:
             TypeError: if width is not int.
             ValueError: if width < 0.
@@ -53,11 +48,9 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Method sets value of height.
-
+        """Method sets height value.
         Args:
             value: parameter
-
         Raises:
             TypeError: if height is not int.
             ValueError: if height < 0.
@@ -87,8 +80,8 @@ class Rectangle:
         """Method prints rectangle."""
 
         empty_string = ""
+
         if self.width == 0 and self.height == 0:
             return empty_string
-
         else:
-           return ('\n'.join('#' * self.width for _ in range(self.height)))
+            return ('\n'.join("#" * self.width for _ in range(self.height)))
