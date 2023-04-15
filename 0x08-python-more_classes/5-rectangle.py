@@ -80,7 +80,6 @@ class Rectangle:
         """Method prints rectangle."""
 
         empty_string = ""
-
         if self.width == 0 and self.height == 0:
             return empty_string
         else:
@@ -88,7 +87,7 @@ class Rectangle:
 
     def __repr__(self):
         """Method returns string representation of rectangle."""
-
+        
         return ("Rectangle({:d}, {:d})".format(self.width, self.height))
 
     def __del__(self):
