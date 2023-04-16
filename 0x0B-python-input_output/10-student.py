@@ -32,5 +32,4 @@ class Student:
             return attr_dict
 
         else:
-            return all_attr 
-
+            return all_attr
