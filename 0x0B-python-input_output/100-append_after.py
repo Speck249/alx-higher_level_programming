@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module presents function for new line insetion."""
 
+
 def append_after(filename="", search_string="", new_string=""):
     """Method inserts new line."""
     my_str = ""
