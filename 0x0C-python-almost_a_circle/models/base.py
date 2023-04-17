@@ -95,7 +95,22 @@ class Base:
                 elif cls.__name__ == "Rectangle":
                     column = ['id', 'width', 'height', 'x', 'y']
 
-                csvfile = csv.DictWriter(f, column=column)
+                write_to_csvfile = csv.DictWriter(f, column=column)
 
                 for items in list_objs:
-                    csvfile.writerow(ls.to_dictionary())
+                    write_to_csvfile.writerow(ls.to_dictionary())
+
+    def load_from_file_csv(cls):
+        """Method deserializes csv file."""
+        with open(filename, 'w', lines="") as f:
+            if cls.__name__ == "Square":
+                column = ['id', 'size', 'x', 'y']
+
+            elif cls.__name__ == "Rectangle":
+                column = ['id', 'width', 'height', 'x', 'y']
+
+            read_from_csvfile = csv.DictReader(f, column=column)
+            csv_items = [dict([key, int(value)] for key, value 
+                  in i.items())for i in csv_items]
+            output = [cls.create(**i) for i in csv_items]
+            return output
