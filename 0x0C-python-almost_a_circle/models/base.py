@@ -5,7 +5,7 @@ import os.path
 
 
 class Base:
-    """Creates class."""
+    """Creates base for all classes."""
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -30,12 +30,11 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """Method saves JSON string representation to file."""
-        length = len(list_objs)
         filename = cls.__name__ + ".json"
 
         with open(filename, 'w') as f:
             if list_objs is None:
-                f.write(list_objs)
+                f.write('[]')
             else:
                 new_list = [ls.to_dictionary() for ls in list_objs]
                 output = Base.to_json_string(new_list)
