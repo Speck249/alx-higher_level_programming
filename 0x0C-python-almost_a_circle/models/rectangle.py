@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Method presents Rectangle methods."""
-from models.base import base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -12,7 +12,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        super.__init__(id)
+        super().__init__(id)
 
     @property
     def width(self):
@@ -88,7 +88,7 @@ class Rectangle(Base):
     def __str__(self):
         """Method returns printed output."""
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"\
-            .format(self.id(), self.x, self.y, self.width,
+            .format(self.id, self.x, self.y, self.width,
                     self.height)
 
     def update(self, *args, **kwargs):
@@ -98,13 +98,14 @@ class Rectangle(Base):
 
         if args != None and length != 0:
             attributes = ['id', 'width', 'height', 'x', 'y']
-            for memb in range(length):
-                setattr(self, attributes[i], args[i])
+            for l in range(length):
+                setattr(self, attributes[l], args[l])
         else:
-            for name, value in kwargs.item():
+            for name, value in kwargs.items():
                 setattr(self, name, value)
 
     def to_dictionary(self):
         """Method returns dictionary representation of Rectangle"""
 
-        print(vars(id, width, height, x, y))
+        return {'id': self.id, 'width': self.__width, 'height': 
+             self.__height, 'x': self.__x, 'y': self.__y}
