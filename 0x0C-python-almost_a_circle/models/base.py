@@ -75,6 +75,6 @@ class Base:
                 output = f.read()
                 new_list = cls.from_json_string(output)
                 for ls in new_list:
-                    new_list1.append(cls.create(**dictionary))
+                    new_list1.append(cls.create(**ls))
 
         return new_list1
