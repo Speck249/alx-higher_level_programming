@@ -33,6 +33,11 @@ class Rectangle(Base):
         """Method retrieves height value"""
         return self.__height
 
+    @property
+    def height(self):
+        """Method retrieves height value"""
+        return self.__height
+
     @height.setter
     def height(self, value):
         """Method sets value of height."""
@@ -87,16 +92,15 @@ class Rectangle(Base):
 
     def __str__(self):
         """Method returns printed output."""
-        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"\
-            .format(self.id, self.x, self.y, self.width,
-                    self.height)
+        return "[Rectangle] ({:d}) {:d}/{:d} - " \
+               "{:d}/{:d}".format(self.id, self.x, self.y,
+                                  self.width, self.height)
 
     def update(self, *args, **kwargs):
         """Method assigns arguments."""
-
         length = len(args)
 
-        if args != None and length != 0:
+        if args is not None and length != 0:
             attributes = ['id', 'width', 'height', 'x', 'y']
             for l in range(length):
                 setattr(self, attributes[l], args[l])
@@ -106,6 +110,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Method returns dictionary representation of Rectangle"""
-
-        return {'id': self.id, 'width': self.__width, 'height': 
-             self.__height, 'x': self.__x, 'y': self.__y}
+        return {'id': self.id, 'width': self.__width, 'height':
+            self.__height, 'x': self.__x, 'y': self.__y}
