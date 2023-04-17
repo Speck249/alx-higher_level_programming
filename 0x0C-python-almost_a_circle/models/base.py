@@ -103,18 +103,15 @@ class Base:
     def load_from_file_csv(cls):
         """Method deserializes csv file."""
 
-        try:
-            with open(filename, 'w', lines="") as f:
-                if cls.__name__ == "Square":
-                    column = ['id', 'size', 'x', 'y']
+        with open(filename, 'w', lines="") as f:
+            if cls.__name__ == "Square":
+                column = ['id', 'size', 'x', 'y']
 
-                elif cls.__name__ == "Rectangle":
-                    column = ['id', 'width', 'height', 'x', 'y']
+            elif cls.__name__ == "Rectangle":
+                column = ['id', 'width', 'height', 'x', 'y']
 
-                read_from_csvfile = csv.DictReader(f, column=column)
-                read_from_csvfile = [dict([key, int(value)] for key, value 
-                      in i.items())for i in csv_items]
-                output = [cls.create(**i) for i in read_from_csv]
-                return output
-        except:
-            raise Exception("Erroneous filename/location.")
+            read_from_csvfile = csv.DictReader(f, column=column)
+            read_from_csvfile = [dict([key, int(value)] for key, value 
+                     in i.items())for i in csv_items]
+            output = [cls.create(**i) for i in read_from_csv]
+            return output
