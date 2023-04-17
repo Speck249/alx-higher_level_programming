@@ -80,7 +80,7 @@ class Rectangle:
         Returns: perimeter of rectangle.
         """
 
-        if self.width == 0 and self.height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
 
         else:
@@ -91,7 +91,7 @@ class Rectangle:
 
         empty_string = ""
 
-        if self.width == 0 and self.height == 0:
+        if self.width == 0 or self.height == 0:
             return empty_string
         else:
             return ('\n'.join("#" * self.width for _ in range(self.height)))
