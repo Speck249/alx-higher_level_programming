@@ -29,15 +29,15 @@ class Square(Rectangle):
         if value <= 0:
             raise ValueError('width must be > 0')
 
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """Method assigns arguments."""
 
         length = len(args)
 
-        if args != None and length != 0:
+        if args is not None and length != 0:
             attributes = ['id', 'size', 'x', 'y']
             for l in range(length):
                 if args[l] == 'size':
