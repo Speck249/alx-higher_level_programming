@@ -33,11 +33,6 @@ class Rectangle(Base):
         """Method retrieves height value"""
         return self.__height
 
-    @property
-    def height(self):
-        """Method retrieves height value"""
-        return self.__height
-
     @height.setter
     def height(self, value):
         """Method sets value of height."""
