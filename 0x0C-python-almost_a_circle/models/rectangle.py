@@ -97,8 +97,8 @@ class Rectangle(Base):
 
         if args is not None and length != 0:
             attributes = ['id', 'width', 'height', 'x', 'y']
-            for l in range(length):
-                setattr(self, attributes[l], args[l])
+            for j in range(length):
+                setattr(self, attributes[j], args[j])
         else:
             for name, value in kwargs.items():
                 setattr(self, name, value)
