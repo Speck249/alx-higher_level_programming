@@ -88,8 +88,8 @@ class Rectangle(Base):
     def __str__(self):
         """Method returns printed output."""
         return "[Rectangle] ({:d}) {:d}/{:d} - " \
-               "{:d}/{:d}".format(self.id, self.x, self.y,
-                                  self.width, self.height)
+               "{:d}/{:d}".format(self.id, self.x,
+                                  self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """Method assigns arguments."""
@@ -105,5 +105,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Method returns dictionary representation of Rectangle"""
-        return {'id': self.id, 'width': self.__width, 'height':
-                     self.__height, 'x': self.__x, 'y': self.__y}
+        return {'id': self.id, 'width': self.__width,
+                 'height': self.__height, 'x': self.__x, 'y': self.__y}
