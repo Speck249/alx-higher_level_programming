@@ -113,7 +113,7 @@ class Base:
             read_from_csvfile = csv.DictReader(f, column=column)
 
             read_from_csvfile = [dict([key, int(value)] for key,
-            value in i.items()) for i in csv_items]
+                value in i.items()) for i in csv_items]
 
             output = [cls.create(**i) for i in read_from_csv]
             return output
