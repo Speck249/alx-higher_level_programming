@@ -74,11 +74,10 @@ class Base:
         if os.path.exists(filename):
             with open(filename, 'r') as f:
                 output = f.read()
-                new_list = cls.from_json_string(output)
-                for ls in new_list:
-                    new_list1.append(cls.create(**ls))
-
-        return new_list1
+                new_list1 = cls.from_json_string(output)
+                for ls in new_list1:
+                    new_list.append(cls.create(**ls))
+        return new_list
 
     def save_to_file_csv(cls, list_objs):
         """Method serializes CSV file."""
@@ -103,7 +102,7 @@ class Base:
     def load_from_file_csv(cls):
         """Method deserializes csv file."""
 
-        with open(filename, 'w', lines="") as f:
+        with open(filename, 'r', lines="") as f:
             if cls.__name__ == "Square":
                 column = ['id', 'size', 'x', 'y']
 
@@ -112,8 +111,8 @@ class Base:
 
             read_from_csvfile = csv.DictReader(f, column=column)
 
-            read_from_csvfile = dict([key, int(value)] for key,
-            value in i.items()) for i in csv_items
+            read_from_csvfile = [dict([key, int(value)] for key,
+            value in i.items()) for i in csv_items]
 
             output = [cls.create(**i) for i in read_from_csv]
             return output
