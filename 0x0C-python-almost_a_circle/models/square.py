@@ -39,12 +39,12 @@ class Square(Rectangle):
 
         if args is not None and length != 0:
             attributes = ['id', 'size', 'x', 'y']
-            for l in range(length):
-                if args[l] == 'size':
-                    setattr(self, 'width', args[l])
-                    setattr(self, 'height', args[l])
+            for k in range(length):
+                if args[k] == 'size':
+                    setattr(self, 'width', args[k])
+                    setattr(self, 'height', args[k])
                 else:
-                    setattr(self, attributes[l], args[l])
+                    setattr(self, attributes[k], args[k])
         else:
             for name, value in kwargs.items():
                 if name == 'size':
@@ -56,5 +56,5 @@ class Square(Rectangle):
     def to_dictionary(self):
         """Method returns dictionary representation of square"""
 
-        return {'id': self.id, 'size': self.size, 'x': self.x, 
+        return {'id': self.id, 'size': self.size, 'x': self.x,
                 'y': self.y}
