@@ -11,7 +11,6 @@ class Base:
 
     def __init__(self, id=None):
         """Method instantiates new class."""
-
         if id is not None:
             self.id = id
 
@@ -22,7 +21,6 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """Method returns JSON string representation."""
-
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         else:
@@ -44,7 +42,6 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """Method returns list of JSON string representation"""
-
         empty_list = []
         if not json_string:
             return empty_list
@@ -55,7 +52,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Method returns instance with set attributes."""
-
         if cls.__name__ == "Rectangle":
             dummy = cls(2, 2)
         elif cls.__name__ == "Square":
@@ -81,7 +77,6 @@ class Base:
 
     def save_to_file_csv(cls, list_objs):
         """Method serializes CSV file."""
-
         filename = "{}.csv".format(cls.__name__)
 
         with open(filename, 'w', lines="") as f:
@@ -101,18 +96,14 @@ class Base:
 
     def load_from_file_csv(cls):
         """Method deserializes csv file."""
-
         with open(filename, 'r', lines="") as f:
             if cls.__name__ == "Square":
                 column = ['id', 'size', 'x', 'y']
-
             elif cls.__name__ == "Rectangle":
                 column = ['id', 'width', 'height', 'x', 'y']
 
-            read_from_csvfile = csv.DictReader(f, column=column)
-
-            read_from_csvfile = [dict([key, int(value)] for key,
-            value in i.items()) for i in csv_items]
-
+            res = csv.DictReader(f, column=column)
+            res = [dict([key, int(value)] for key, value in i.items())
+                   for i in csv_items]
             output = [cls.create(**i) for i in read_from_csv]
             return output
