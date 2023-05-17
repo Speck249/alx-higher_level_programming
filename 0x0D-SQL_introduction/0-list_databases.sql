@@ -1,3 +1,2 @@
--- Lists all databases in MySQL server
--- Command shows all databases
+-- SQL Query lists all databases.
 SHOW DATABASES;
