@@ -12,7 +12,7 @@ class Square extends mainSquare {
       sq = sq + c;
     }
     for (let i = 0; i < this.height; i++) {
-    console.log(sq);
+      console.log(sq);
     }
   }
 }
