@@ -10,10 +10,10 @@ class Rectangle {
 
 	print() {
 		let rect = "";
-		for (i = 0; i < this.width; i++) {
+		for (let i = 0; i < this.width; i++) {
 			rect = rect + 'X';
                 }
-                for (i = 0; i < this.height; i++) {
+                for (let i = 0; i < this.height; i++) {
 			console.log(rect)
 		}
 	}
@@ -27,7 +27,7 @@ class Rectangle {
 	double() {
 		this.weight *= 2;
 		this.height *= 2;
-
+	}
 }
 
 module.exports = Rectangle;
