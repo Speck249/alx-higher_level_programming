@@ -1,4 +1,4 @@
--- Command creates new table
+-- SQL Query creates new table
 -- and inserts new values into table
 CREATE TABLE IF NOT EXISTS second_table (
 id INT,
