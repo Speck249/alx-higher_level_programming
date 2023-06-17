@@ -1,8 +1,16 @@
 #!/usr/bin/python3
+"""
+Module lists all states
+from the database hbtn_0e_0_usa.
+"""
 import sys
 import MySQLdb
 
 if __name__ == '__main__':
+    """
+    Connect to the MySQL server
+    and retrieve desired output.
+    """
     db_connection = MySQLdb.connect(user=sys.argv[1],
         password=sys.argv[2], database=sys.argv[3],
         host='localhost', port=3306)
@@ -11,7 +19,7 @@ if __name__ == '__main__':
     
     query = "SELECT * FROM states ORDER BY states.id;"
     
-    cursor.execute("SELECT * FROM states ORDER BY states.id;")
+    cursor.execute(query)
 
     result = cursor.fetchall()
     
