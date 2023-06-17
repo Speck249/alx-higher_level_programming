@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module lists all State objects
+Module lists the first State object
 from database hbtn_0e_6_usa.
 """
 from sqlalchemy import create_engine
