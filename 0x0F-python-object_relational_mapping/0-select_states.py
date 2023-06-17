@@ -16,13 +16,13 @@ if __name__ == '__main__':
         host='localhost', port=3306)
 
     cursor = db_connection.cursor()
-    
+
     query = "SELECT * FROM states;"
 
     cursor.execute(query)
 
     result = cursor.fetchall()
- 
+
     for item in result:
         print(item)
 
