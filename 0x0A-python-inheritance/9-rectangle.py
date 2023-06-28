@@ -9,12 +9,12 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """Method instantiates class."""
 
+        super().integer_validator("width", width)
         self.__width = width
-        self.integer_validator("width", width)
         """validates value of width."""
 
+        super().integer_validator("height", height)
         self.__height = height
-        self.integer_validator("height", height)
         """validates value of height."""
 
     def area(self):
