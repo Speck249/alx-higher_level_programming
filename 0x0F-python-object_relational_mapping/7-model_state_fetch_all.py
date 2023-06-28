@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 if __name__ == '__main__':
     """
     Connect to MySQL server and
-    retrieve the output.
+    retrieve desired output.
     """
     engine = create_engine('mysql+mysqldb://{}:{}@'
                            'localhost:3306/{}'
@@ -26,4 +26,4 @@ if __name__ == '__main__':
     result = session.query(State).order_by(State.id).all()
 
     for item in result:
-        print("{}:{}".format(item.id, item.name))
+        print("{}: {}".format(item.id, item.name))
