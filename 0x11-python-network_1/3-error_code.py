@@ -17,4 +17,3 @@ if __name__ == "__main__":
             print(output)
     except urllib.error.HTTPError as e:
         sys.stderr.write(f"Error code: {e.code}\n")
-
