@@ -3,22 +3,24 @@
 const request = require('request');
 const url = process.argv[2];
 
-request(url, function (error, response, body) {
+request.get(url, (error, response, body) => {
   if (error) {
     console.error(error);
     return;
   }
 
-  const userTasks = {};
   const output = JSON.parse(body);
+  const tasksDone = output.filter(task => {
+    return task.completed;
+  });
 
-  for (let counter = 0; counter < output.length; counter++) {
-    if (output[counter].completed === true) {
-      if (userTasks[output[counter].userId] === undefined) {
-        userTasks[output[counter].userId] = 0;
-      }
-      userTasks[output[counter].userId]++;
+  const userTasks = {};
+  tasksDone.forEach(task => {
+    if (userTasks[task.userId]) {
+      userTasks[task.userId]++;
+    } else {
+      userTasks[task.userId] = 1;
     }
-  }
+  });
   console.log(userTasks);
 });
