@@ -18,7 +18,7 @@ request(url, function (error, response, body) {
         userTasks[output[counter].userId] = 0;
       }
       userTasks[output[counter].userId]++;
-      }
     }
-   console.log(userTasks);
+  }
+  console.log(userTasks);
 });
