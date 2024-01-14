@@ -1,5 +1,6 @@
-#Introduction to Programming Python
-##Learning Objectives
+# Introduction to Programming with Python
+
+## Learning Objectives
 * The birth of Python
 * Compilation vs Interpretation
 * Using the Python interpreter
@@ -16,6 +17,6 @@
 * Python script must pass pycodestyle (version 2.8.*)
 * Make Python scripts executable
 
-### Be sure to check out [Zen of Python] (https://peps.python.org/pep-0020/)
+### Be sure to check out [Zen of Python](https://peps.python.org/pep-0020/)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
