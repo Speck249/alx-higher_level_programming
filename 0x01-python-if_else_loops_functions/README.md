@@ -1,16 +1,22 @@
-0x01. Python - if/else, loops, functions
+# Conditional Expressions, Loops and Functions in Python
 
-00. Print the Sign of an Integer
-01. Finding Last Digit of Integer
-02. Print Lowercase Alphabet
-03. Print Lowercase Alphabet exept e & q
-04. Print 0 - 98 in Base 10 and Base 16
-05. Print 0 - 99
-06. Print all possible different combinations of two digits
-07. Check for Lowercase Char
-08. Print String in Uppercase
-09. Print Last Digit of an Integer 
-10. Return Sum of Two Integers
-11. Compute the Power of an Integer
-12. The FizzBuzz Test
-13. Technical Interview Prep
+## Learning Objectives
+* Using mnemonic variables
+* Inserting Comments
+* Understanding Arithmetic & Logical Operators
+* Creating Python Functions
+* Return values vs Side effects
+* Function & variable scopes
+* What is the Python traceback?
+* Working with Conditional Expressions
+* How to use match statements
+* Exploring 'for' & 'while' loops
+
+## Project Requirements
+* Editors: vi, vim, or emacs
+* Scripts to be interpreted on Ubuntu 20.04 LTS with python3 (version 3.8.5)
+* Open script file with line >> #!/usr/bin/python3
+* Python script must pass pycodestyle (version 2.8.*)
+* Make Python scripts executable
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
