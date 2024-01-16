@@ -1,4 +1,4 @@
-# Conditional Expressions, Loops and Functions in Python
+# Conditional Expressions, Loops and Functions
 
 ## Learning Objectives
 * Using mnemonic variables
