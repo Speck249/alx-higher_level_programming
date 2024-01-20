@@ -1,8 +1,4 @@
 #!/usr/bin/python3
 
-for i in reversed(range(97, 123)):
-    if i % 2 == 0:
-        j = 0
-    else:
-        j = 32
-    print("{:c}".format(i - j), end="")
+for idx in reversed(range(97, 123)):
+    print('{}'.format(chr(idx - 32) if idx % 2 != 0 else chr(idx)), end='')
