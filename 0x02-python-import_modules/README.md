@@ -1,8 +1,21 @@
-0x02.Python - import & modules
+# Import and Modules
 
-0. Import the function 'def add(a, b)'
-1. Imports functions from 'calculations' module
-2. Print number of and list of arguments
-3. Print sum of all arguments
-4. Print all names defined by the compiled module 'hidden4.pyc'
-5. Import variable 'a' from file 'variableload5.py' & print its value
+## Learning Objectives
+* What are Python Libraries
+* How to create custom Modules
+* How to import & use Python Modules
+* How to import & use Functions from Modules
+* How to use built-in Functions
+* How to use the ' __name__ == "__main__" ' idiom
+* Modules vs Packages
+* Working with Command Line Arguments
+
+### Project Requirement
+* Editors: vi, vim, or emacs
+* Scripts to be interpreted on Ubuntu 20.04 LTS with python3 (version 3.8.5)
+* Open script file with line >> #!/usr/bin/python3
+* All files end with a new line
+* Python script must pass pycodestyle (version 2.8.*)
+* All scripts are executable
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
