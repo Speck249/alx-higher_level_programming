@@ -1,3 +1,8 @@
 #!/usr/bin/python3
 import string
-print(string.ascii_uppercase)
+
+def main():
+    print(string.ascii_uppercase[:])
+
+if __name__ == '__main__':
+    main()
