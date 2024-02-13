@@ -1,4 +1,4 @@
-# Data Stuctures: Lists & Tuples
+# Data Structures: Lists & Tuples
 
 ## Learning Objectives
 * Data Structures & Algorithms (Big O)
@@ -6,6 +6,7 @@
 * Abstraction (ADT) in Data Structures
 * What are Lists & How to use them
 * Getting familiar with built-in List Methods
+* Create new list with List Comprehension
 * Lists vs Stacks & Queues
 * What are Tuples & How to use them
 * Getting familiar with built-in Tuple Methods
