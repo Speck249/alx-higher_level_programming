@@ -1,15 +1,22 @@
-0x04. Python - More Data Structures: Set, Dictionary
+# Data Structures: Set and Dictionary
 
-00. Compute square value of matrix of integers.
-01. Replace occurrences of an element by another.
-02. Add unique integers in a list.
-03. Return set of common elements.
-04. Return set of elements present in only one set.
-05. Return number of dictionary keys.
-06. Print a dictionary by ordered keys.
-07. Replace or add key/value in a dictionary.
-08. Delete a key in a dictionary.
-09. Return new dictionary with multiplied of 2
-10. Return key with the biggest integer value.
-11. Return a list with all values multiplied by a number.
-12. Convert Roman numeral to integer.
+## Learning Objectives
+* Arithmetic Operations on Lists
+* What are Sets & How to use them
+* Working with built-in Set Methods
+* Sets vs Lists
+* Iterating into Sets
+* What are Dictionaries & How to use them
+* Key-Value pair in Dictionaries
+* The Lambda function
+* Using the Map, Reduce, Filter Functions
+
+## Project Requirement
+* Editors: vi, vim, or emacs
+* Scripts to be interpreted on Ubuntu 20.04 LTS with python3 (version 3.8.5)
+* Open script file with line >> #!/usr/bin/python3
+* All files end with a new line
+* Python script must pass pycodestyle (version 2.8.*)
+* All scripts are executable
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
