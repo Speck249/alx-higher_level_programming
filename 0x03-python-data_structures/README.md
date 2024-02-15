@@ -6,14 +6,13 @@
 * Abstraction (ADT) in Data Structures
 * What are Lists & How to use them
 * Getting familiar with built-in List Methods
-* Create new list with List Comprehension
+* List Comprehension vs Generator Expressions
 * Lists vs Stacks & Queues
 * What are Tuples & How to use them
 * Getting familiar with built-in Tuple Methods
 * Tuples vs Lists
-* What is a Sequence
 * How to do Tuple packing
-* How to do Sequence unpacking
+* How to do Tuple/Sequence/Iterable unpacking
 
 ### Project Requirement
 * Editors: vi, vim, or emacs
