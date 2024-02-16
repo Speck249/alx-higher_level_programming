@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
 def best_score(a_dictionary):
-    if not a_dictionary:
+    if type(a_dictionary) != dict:
         return None
-
-    else:
-        max_score = max(a_dictionary, key=a_dictionary.get)
-        return max_score
+    return max(a_dictionary, key=a_dictionary.get)
