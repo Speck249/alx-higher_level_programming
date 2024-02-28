@@ -1,31 +1,39 @@
 #!/usr/bin/python3
-"""Python Classes & Objects."""
+"""
+Module calculates and returns
+area of square.
+"""
 
 
 class Square:
-    """Creates a class."""
+    """
+    Creates new class.
+    """
 
     def __init__(self, size=0):
-        """Instantiates new class.
+        """
+        Constructor method initializes class.
+
         Args:
             size: size of the square.
+
         Raises:
-            TypeError: if size is not an integer.
-            ValueError: if value of size is negative.
+            TypeError: size must be an integer.
+            ValueError: size must be positive integer.
         """
 
         if not isinstance(size, int):
-            raise TypeError("size must be an integer")
+            raise TypeError('size must be an integer')
         if size < 0:
-            raise ValueError("size must be >= 0")
-
+            raise ValueError('size must be >= 0')
         self.__size = size
 
     def area(self):
         """
-        Computes area of square from given size.
-        Returns: area of square.
+        Instance method calculates area of square.
+
+        Returns:
+          area of square.
         """
 
-        result = self.__size ** 2
-        return result
+        return self.__size ** 2
