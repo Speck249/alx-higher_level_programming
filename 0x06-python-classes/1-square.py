@@ -15,4 +15,4 @@ class Square:
         Constructor method initializes class
         with private attribute.
         """
-        self._size = size
+        self.__size = size
