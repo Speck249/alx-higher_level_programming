@@ -7,12 +7,12 @@ with private attribute.
 
 class Square:
     """
-    Creates an empty class.
+    Creates new class.
     """
 
     def __init__(self, size):
         """
-        Constructor method instantiates new class
-        and initializes its private attribute.
+        Constructor method initializes class
+        with private attribute.
         """
-        self.__size = size
+        self._size = size
