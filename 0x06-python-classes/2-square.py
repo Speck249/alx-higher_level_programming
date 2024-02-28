@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Module creates new class with private
-attribute and enforces error checking.
+Module initializes new class and
+enforces error checking.
 """
 
 
 class Square:
     """
-    Creates an empty class.
+    Creates new class.
     """
 
     def __init__(self, size=0):
         """
-        Constructor method instantiates new class.
+        Constructor method initializes class.
 
         Args:
           size: size of the square.
