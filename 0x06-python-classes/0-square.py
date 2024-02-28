@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""Python Objects & Classes"""
+"""
+Module defines an empty class.
+"""
 
 
 class Square:
-    """Creates class"""
+    """
+    New and empty class created.
+    """
     pass
