@@ -7,6 +7,7 @@
 * Difference between Objects and Instances
 * What is an Attribute?
 * Public vs Private attributes
+* Single underscore prefix vs Name mangling
 * Difference between Attributes and Instance variables
 * What is a Method?
 * Difference between Instance Methods and Class Methods
