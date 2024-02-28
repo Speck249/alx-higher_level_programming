@@ -1,13 +1,18 @@
 #!/usr/bin/python3
-"""Python Classes & Objects."""
+"""
+Module defines a new class, 
+with private attribute.
+"""
 
 
 class Square:
-    """Creates a class."""
+    """
+    Creates an empty class.
+    """
 
     def __init__(self, size):
-        """Instantiates new class.
-        Args: size - size of the square.
         """
-
+        Constructor method instantiates new class
+        and initializes its private attribute.
+        """
         self.__size = size
