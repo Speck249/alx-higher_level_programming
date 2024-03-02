@@ -25,7 +25,7 @@ class Square:
         """
         Method returns string representation of object.
         """
-        return '{}'.format(self.my_print())
+        return f'{self.my_print()}'
 
     @property
     def size(self):
@@ -88,6 +88,5 @@ class Square:
                 print('{}'.format(chr(32) * self.__position[0]), end='')
             for column in range(self.__size):
                 print('#', end='')
-            if row < self.__size:
-                print()
+            print()
         return ''
