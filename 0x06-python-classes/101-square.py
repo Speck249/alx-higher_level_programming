@@ -82,10 +82,10 @@ class Square:
 
         for _ in range(self.__position[1]):
             print()
+
         for row in range(self.__size):
             if self.__position[0] > 0:
                 print(' ' * self.__position[0], end='')
             for column in range(self.__size):
                 print('#', end='')
             print()
-        return ''
