@@ -51,10 +51,11 @@ class Square:
         """
         Method modifies position of square.
         """
-        if (len(value) != 2 and
-                not isinstance(value, tuple) and
-                not all(isinstance(num, int) for num in value) and
-                all(num < 0 for num in value)):
+        if (
+                len(value) != 2 or
+                not isinstance(value, tuple) or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
 
@@ -71,6 +72,7 @@ class Square:
         """
         if self.__size == 0:
             print()
+            return
 
         if self.__position[1] > 0:
             for _ in range(self.__position[1]):
