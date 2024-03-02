@@ -18,7 +18,6 @@ class Square:
             size: size of the square.
             position: location of square along coordinate.
         """
-
         self.size = size
         self.position = position
 
@@ -27,7 +26,6 @@ class Square:
         """
         Method retrieves size of square.
         """
-
         return self.__size
 
     @size.setter
@@ -35,7 +33,6 @@ class Square:
         """
         Method modifies size of square.
         """
-
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -47,7 +44,6 @@ class Square:
         """
         Method retrieves position of square
         """
-
         return self.__position
 
     @position.setter
@@ -55,9 +51,7 @@ class Square:
         """
         Method modifies position of square.
         """
-
-        if (
-                len(value) != 2 and
+        if (len(value) != 2 and
                 not isinstance(value, tuple) and
                 not all(isinstance(num, int) for num in value) and
                 all(num < 0 for num in value)):
@@ -69,19 +63,18 @@ class Square:
         Calculate area of the square from given size.
         Returns: area of the square.
         """
-
         return self.__size ** 2
 
     def my_print(self):
         """
         Method prints square along the x, y coordinate.
         """
-
         if self.__size == 0:
             print()
+
         if self.__position[1] > 0:
             for _ in range(self.__position[1]):
-                print(' ')
+                print('')
         for row in range(self.__size):
             if self.__position[0] > 0:
                 print('{}'.format(chr(32) * self.__position[0]), end='')
