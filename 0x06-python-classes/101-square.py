@@ -78,7 +78,7 @@ class Square:
         """
         if self.__size == 0:
             print()
-            return ''
+            return
 
         if self.__position[1] > 0:
             for _ in range(self.__position[1]):
@@ -88,5 +88,6 @@ class Square:
                 print('{}'.format(chr(32) * self.__position[0]), end='')
             for column in range(self.__size):
                 print('#', end='')
-            print()
+            if row < self.__size:
+                print()
         return ''
