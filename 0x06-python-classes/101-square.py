@@ -72,7 +72,7 @@ class Square:
         """
         return self.__size ** 2
 
-    def my_print(self):
+      def my_print(self):
         """
         Method prints square along the x, y coordinate.
         """
@@ -80,12 +80,11 @@ class Square:
             print()
             return
 
-        if self.__position[1] > 0:
-            for _ in range(self.__position[1]):
-                print('')
+        for _ in range(self.__position[1]):
+            print()
         for row in range(self.__size):
             if self.__position[0] > 0:
-                print('{}'.format(chr(32) * self.__position[0]), end='')
+                print(' ' * self.__position[0], end='')
             for column in range(self.__size):
                 print('#', end='')
             print()
