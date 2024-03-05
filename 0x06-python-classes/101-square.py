@@ -12,7 +12,7 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Constructor method initializes class.
+        Instantiates new class wits private attributes.
 
         Args:
             size: size of the square.
@@ -25,7 +25,7 @@ class Square:
         """
         Method returns string representation of object.
         """
-        return f'{self.my_print()}'
+        return '{}'.format(self.my_print())
 
     @property
     def size(self):
@@ -38,7 +38,7 @@ class Square:
     def size(self, value):
         """
         Method modifies size of square.
-        """
+          """
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -80,12 +80,12 @@ class Square:
             print()
             return
 
-        for _ in range(self.__position[1]):
-            print()
-
+        if self.__position[1] > 0:
+            for _ in range(self.__position[1]):
+                print('')
         for row in range(self.__size):
             if self.__position[0] > 0:
-                print(' ' * self.__position[0], end='')
+                print('{}'.format(chr(32) * self.__position[0]), end='')
             for column in range(self.__size):
                 print('#', end='')
             print()
