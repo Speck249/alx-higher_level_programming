@@ -1,12 +1,22 @@
-0x08. Python - More Classes and Objects
+# More Classes and Objects
 
-0. Create new class.
-1. Instantiate class.
-2. Print area and rectangle
-3. Print rectangle.
-4. String representation.
-5. Detect instance deletion.
-6. String representation.
-7. Change representation.
-8. Compare rectangles.
-9. New rectangle instance.
+## Learning Objectives
+* What is the self variable?
+* Why use the __init__ method?
+* What is the use of __str__ and __repr__?
+* How to use __str__ and __repr__?
+* What is the use of __dict__?
+* Class attribute vs. Instance attribute
+* Class method vs. Instance method vs Static method
+* Using the getattr function
+
+### Project Requirements
+* Editors: vi, vim, or emacs
+* Scripts to be interpreted on Ubuntu 20.04 LTS with python3 (version 3.8.5)
+* Open script file with line >> #!/usr/bin/python3
+* All class, modules and functions must be documented
+* All files end with a new line
+* Python script must pass pycodestyle (version 2.8.*)
+* All scripts are executable
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
