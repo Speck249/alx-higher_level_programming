@@ -1,87 +1,99 @@
 #!/usr/bin/python3
-"""Module returns area and perimeter of rectangle."""
+"""
+Module returns area and perimeter of rectangle.
+"""
 
 
 class Rectangle:
-    """Creates new class"""
+    """
+    Creates new class.
+    """
 
     def __init__(self, width=0, height=0):
-        """Method instantiates new class.
+        """
+        Constructor method initializes new class
+        with private attributes.
 
         Args:
-            width: first parameter
-            height: second paramter
+            width: width of rectangle.
+            height: height of rectangle.
         """
 
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
-        """Method retrieves width.
-
-        Returns:
-            value of width.
+        """
+        Getter method retrieves width of rectangle.
         """
 
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Method sets value of width.
+        """
+        Setter method modifies value of width.
 
         Args:
-            value: parameter
+          value: new value for rectangle width.
 
         Raises:
-            TypeError: if width is not int.
-            ValueError: if width < 0.
+            TypeError: width must be an integer.
+            ValueError: width must be positive integer.
         """
 
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
+        if not isinstance(value, int):
+            raise TypeError('width must be an integer')
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError('width must be >= 0')
         self.__width = value
 
     @property
     def height(self):
-        """Method retrieves height."""
+        """
+        Getter method retrieves height of rectanlge.
+        """
 
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Method sets height value.
+        """
+        Setter method modifies value of height.
 
         Args:
-            value: parameter
+            value: new value for rectangle height.
 
         Raises:
-            TypeError: if height is not int.
-            ValueError: if height < 0.
+            TypeError: height must be an integer.
+            ValueError: height must be positive integer.
         """
 
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
+        if not isinstance(value, int):
+            raise TypeError('height must be an integer')
         if value < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError('height must be >= 0')
         self.__height = value
 
     def area(self):
-        """Method computes area of rectangle.
-        Returns: area of rectangle.
+        """
+        Instance method computes area of rectangle.
+
+        Returns:
+          area of rectangle.
         """
 
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
-        """Method computes perimeter of rectangle.
-        Returns: perimeter of rectangle.
+        """
+        Instance method computes perimeter of rectangle.
+
+        Returns:
+          perimeter of rectangle.
         """
 
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-
-        else:
-            return (2 * self.__width) + (2 * self.__height)
+        return 2 * (self.__width + self.__height)
