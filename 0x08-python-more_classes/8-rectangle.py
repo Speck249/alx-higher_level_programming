@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Module prints rectangle with symbol stored inside
-a public class attribute.
+Module returns biggest area value.
 """
 
 
