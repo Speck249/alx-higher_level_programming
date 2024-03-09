@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Module accesses and modifies value
-of private attribute.
+Module prints square to the console.
 """
 
 
@@ -12,7 +11,8 @@ class Square:
 
     def __init__(self, size=0):
         """
-        Constructor method initializes class.
+        Constructor method initializes class
+        with private attribute.
 
         Args:
             size: size of the square.
@@ -57,7 +57,7 @@ class Square:
 
         if self.__size == 0:
             print()
-        for width in range(self.__size):
-            for length in range(self.__size):
+        for row in range(self.__size):
+            for col in range(self.__size):
                 print('#', end='')
             print()
