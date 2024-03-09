@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Module returns number of existing instances
-following creation or deletion.
+Module prints rectangle with symbol stored inside
+a public class attribute.
 """
 
 
 class Rectangle:
     """
-    Creates new class and a public class attribute.
+    Creates new class and public class attributes.
     """
 
     number_of_instances = 0
@@ -36,12 +36,13 @@ class Rectangle:
         """
 
         res = ''
+        symbol = str(self.print_symbol)
         if self.__width != 0 and self.__height != 0:
             for row in range(self.__height):
                 if row < self.__height - 1:
-                    print(self.print_symbol * self.__width)
+                    print(symbol * self.__width)
                 if row == self.__height - 1:
-                    print(self.print_symbol * self.__width, end='')
+                    print(symbol * self.__width, end='')
         return f'{res}'
 
     def __repr__(self):
