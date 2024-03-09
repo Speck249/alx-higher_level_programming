@@ -31,10 +31,7 @@ class Rectangle:
 
         res = ''
         if self.__width != 0 and self.__height != 0:
-            for row in range(self.__height):
-                for col in range(self.__width):
-                    print('#', end='')
-                print()
+            return ('#' * self.__width + '\n') * self.__height
         return f'{res}'
 
     @property
