@@ -32,9 +32,10 @@ class Rectangle:
         res = ''
         if self.__width != 0 and self.__height != 0:
             for row in range(self.__height):
-                if row < self.__height:
+                if row < self.__height - 1:
                     print('#' * self.__width)
-                print('#' * self.__width, end='')
+                if row == self.__height - 1:
+                    print('#' * self.__width, end='')
         return f'{res}'
 
     @property
