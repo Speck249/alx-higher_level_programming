@@ -14,6 +14,9 @@ class Square:
         """
         Constructor method initializes class
         with private attributes.
+
+        Args:
+          size: size of the square.
         """
 
         self.__size = size
