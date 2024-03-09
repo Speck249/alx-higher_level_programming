@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-Module defines a new class,
-with private attributes,
-setter and getter methods.
+Module initializes new class with private
+attributes, setter and getter methods.
 """
 
 
@@ -18,11 +17,11 @@ class Rectangle:
 
         Args:
             width: width of rectangle.
-            height: hieght of rectangle.
+            height: height of rectangle.
         """
 
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -36,9 +35,9 @@ class Rectangle:
     def width(self, value):
         """
         Setter method modifies value of width.
- 
+
         Raises:
-            TypeError: width must be integer.
+            TypeError: width must be an integer.
             ValueError: width must be positive integer.
         """
 
@@ -62,7 +61,7 @@ class Rectangle:
         Setter method modifies value of height.
 
         Raises:
-            TypeError: height must be integer.
+            TypeError: height must be an integer.
             ValueError: height must be positive integer.
         """
 
