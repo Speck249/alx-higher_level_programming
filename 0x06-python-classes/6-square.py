@@ -34,7 +34,14 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Setter method modifies size of square.
+        Setter method modifies value of square size.
+
+        Args:
+          value: new value for square size.
+
+        Raises:
+          TypeError: size must be an integer.
+          ValueError: size must be positive integer.
         """
 
         if not isinstance(value, int):
@@ -54,7 +61,13 @@ class Square:
     @position.setter
     def position(self, value):
         """
-        Setter method modifies position of square.
+        Setter method modifies value of square position.
+
+        Args:
+          value: new value for position of sqaure.
+
+        Raises:
+          TypeError: position must be a tuple of two positive integers.
         """
 
         if (
