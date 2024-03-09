@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""Module creates new class"""
+"""
+Module defines new class
+"""
 
 
 class Rectangle:
-    """Creates class"""
+    """
+    Creates a new empty class
+    """
     pass
