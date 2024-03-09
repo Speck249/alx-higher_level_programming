@@ -16,16 +16,8 @@ class Square:
 
         Args:
             size: size of the square.
-
-        Raises:
-            TypeError: size must be an integer.
-            ValueError: size must be positive integer.
         """
 
-        if not isinstance(size, int):
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
         self.__size = size
 
     @property
@@ -40,10 +32,17 @@ class Square:
     def size(self, value):
         """
         Setter method modifies value of square size.
+
+        Args:
+          value: new value for square size.
+
+        Raises:
+          TypeError: size must be an integer or float.
+          ValueError: size must be positive integer or float.
         """
 
-        if not isinstance(value, int):
-            raise TypeError('size must be an integer')
+        if not isinstance(value, int) or not isinstance(value, float):
+            raise TypeError('size must be a number')
         if value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
