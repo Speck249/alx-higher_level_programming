@@ -12,7 +12,8 @@ class Square:
 
     def __init__(self, size=0):
         """
-        Constructor method initializes class.
+        Constructor method initializes class
+        with private attribute.
 
         Args:
             size: size of the square.
@@ -42,7 +43,7 @@ class Square:
 
     def area(self):
         """
-        Computes area of square from given size.
+        Instance method calculates area of square.
 
         Returns:
           area of square.
