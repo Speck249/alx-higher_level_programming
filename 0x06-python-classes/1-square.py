@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module defines a new class,
-with private attributes.
+with private attribute.
 """
 
 
@@ -13,7 +13,7 @@ class Square:
     def __init__(self, size):
         """
         Constructor method initializes class
-        with private attributes.
+        with private attribute.
 
         Args:
           size: size of the square.
