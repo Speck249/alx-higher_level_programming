@@ -32,6 +32,13 @@ class Square:
     def size(self, value):
         """
         Setter method modifies value of square size.
+
+        Args:
+          value: new value for square size.
+
+        Raises:
+          TypeError: size must be an integer.
+          ValueError: size must be positive integer.
         """
 
         if not isinstance(value, int):
