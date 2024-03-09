@@ -36,6 +36,9 @@ class Rectangle:
         """
         Setter method modifies value of width.
 
+        Args:
+          value: new value for rectangle width.
+
         Raises:
             TypeError: width must be an integer.
             ValueError: width must be positive integer.
@@ -59,6 +62,9 @@ class Rectangle:
     def height(self, value):
         """
         Setter method modifies value of height.
+
+        Args:
+          value: new value for rectangle height.
 
         Raises:
             TypeError: height must be an integer.
