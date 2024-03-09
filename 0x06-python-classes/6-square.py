@@ -12,27 +12,31 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Constructor method initializes class.
+        Constructor method initializes class
+        with private attribute.
 
         Args:
             size: size of the square.
             position: location of square along coordinate.
         """
+
         self.size = size
         self.position = position
 
     @property
     def size(self):
         """
-        Method retrieves size of square.
+        Getter method retrieves size of square.
         """
+
         return self.__size
 
     @size.setter
     def size(self, value):
         """
-        Method modifies size of square.
+        Setter method modifies size of square.
         """
+
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -42,15 +46,17 @@ class Square:
     @property
     def position(self):
         """
-        Method retrieves position of square
+        Getter method retrieves position of square
         """
+
         return self.__position
 
     @position.setter
     def position(self, value):
         """
-        Method modifies position of square.
+        Setter method modifies position of square.
         """
+
         if (
                 len(value) != 2 or
                 not isinstance(value, tuple) or
@@ -61,15 +67,19 @@ class Square:
 
     def area(self):
         """
-        Calculate area of the square from given size.
-        Returns: area of the square.
+        Instance method Calculate area of square.
+
+        Returns:
+          area of the square.
         """
+
         return self.__size ** 2
 
     def my_print(self):
         """
-        Method prints square along the x, y coordinate.
+        Instance method prints square along x, y coordinate.
         """
+
         if self.__size == 0:
             print()
             return
@@ -79,7 +89,7 @@ class Square:
                 print('')
         for row in range(self.__size):
             if self.__position[0] > 0:
-                print('{}'.format(chr(32) * self.__position[0]), end='')
-            for column in range(self.__size):
+                print('#' * self.__position[0], end='')
+            for col in range(self.__size):
                 print('#', end='')
             print()
