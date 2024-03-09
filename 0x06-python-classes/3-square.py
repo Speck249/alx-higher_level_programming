@@ -12,7 +12,8 @@ class Square:
 
     def __init__(self, size=0):
         """
-        Constructor method initializes class.
+        Constructor method initializes class
+        with private attributes.
 
         Args:
             size: size of the square.
