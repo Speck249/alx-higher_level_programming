@@ -1,4 +1,4 @@
-# Data Structures: Set and Dictionary
+# Data Structures: Set & Dictionary
 
 ## Learning Objectives
 * Arithmetic Operations on Lists
@@ -8,10 +8,11 @@
 * Iterating into Sets
 * What are Dictionaries & How to use them
 * Key-Value pair in Dictionaries
-* The Lambda function
+* Working with built-in Dictionary Methods
+* Understanding the Lambda function
 * Using the Map, Reduce, Filter Functions
 
-## Project Requirement
+## Project Requirements
 * Editors: vi, vim, or emacs
 * Scripts to be interpreted on Ubuntu 20.04 LTS with python3 (version 3.8.5)
 * Open script file with line >> #!/usr/bin/python3
