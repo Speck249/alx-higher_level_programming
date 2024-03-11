@@ -8,7 +8,7 @@
 * Python Data Types
 * Exploring String methods
 * Methods vs Functions
-* Exploring Pycodestyle
+* Exploring PEP8
 
 ## Project Requirements
 * Editors: vi, vim, emacs
