@@ -1,12 +1,11 @@
 #!/usr/bin/node
 
-const len = process.argv.length;
+const num_occurence = process.argv[2];
 
-if (len === 2) {
+if (!(parseInt(process.argv[2]))) {
   console.log('Missing number of occurrences');
 } else {
-  const args = process.argv.slice(2);
-  for (let i = 0; i < args; i++) {
+  for (let idx = 0; idx < num_occurence; idx++) {
     console.log('C is fun');
   }
 }
