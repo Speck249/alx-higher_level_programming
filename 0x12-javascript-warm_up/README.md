@@ -1,17 +1,17 @@
 # JavaScript Warmup
 
 ## Learning Objectives
-* NodeJs vs Native browser support
+* The birth of JavaScript
 * JavaScript Data Types
+* Type conversion vs Type coercion
 * Variable Initialization
-* Var vs Const vs Let
-* Variable and Function scopes
-* Type coversion and Type coercion
 * Function Defination and Invokation
-* Importing and Using Functions
+* Variable and Function Scopes
+* Exporting Functions
+* Importing and using Modules
 * Control Flow with Conditional Structures
 * JavaScript Loop Operation
-* Intrinsic objects
+* Intrinsic JavaScript Objects
 * String Interpolation vs Template Literals
 * Logical and Comparison Operators
 
