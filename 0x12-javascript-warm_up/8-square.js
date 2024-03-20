@@ -1,15 +1,12 @@
 #!/usr/bin/node
 
-const len = process.argv.slice(2);
+square_size = parseInt(process.argv[2]);
 
-if (len === 0 || (!parseInt(len[0]))) {
+if (!(parseInt(square_size))) {
   console.log('Missing size');
 } else {
-	let sq = "";
-	for (i = 0; i < len[0]; i++) {
-		sq = sq + 'X';
-        }
-        for (i = 0; i < len[0]; i++) {
-		console.log(sq)
-        }
+  for (idx = 0; idx < square_size; idx++) {
+    square = Array(square_size).fill('X').join('')
+    console.log(square)
+  }
 }
