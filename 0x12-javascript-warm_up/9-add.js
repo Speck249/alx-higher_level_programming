@@ -1,15 +1,10 @@
 #!/usr/bin/node
 
-const len = process.argv.slice(2);
-const a = len[0];
-const b = len[1];
+const a = parseInt(process.argv[2]);
+const b = parseInt(process.argv[3]);
 
 function add (a, b) {
-  if (len < 2) {
-    return NaN;
-  } else {
-    return a + b;
-  }
+  return a + b;
 }
 
-console.log(add(parseInt(a), parseInt(b)));
+console.log(add(a, b));
