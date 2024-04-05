@@ -29,6 +29,15 @@ Negative value with type conversion:
     >>> add_integer(-7.3, 4)
     -3
 
+Overflow:
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('-inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
 Invalid argument length:
     >>> add_integer(3, 4, 6)
     Traceback (most recent call last):
@@ -36,8 +45,10 @@ Invalid argument length:
 
 Invalid argument type:
     >>> add_integer('school')
+    Traceback (most recent call last):
     TypeError: a must be an integer
 
 Invalid argument type
     >>> add_integer(32, 'school')
+    Traceback (most recent call last):
     TypeError: b must be an integer
