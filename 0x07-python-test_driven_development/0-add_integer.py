@@ -1,26 +1,35 @@
 #!/usr/bin/python3
-"""Module presents function that returns sum of two integers."""
+"""
+Module implements function that
+returns sum of two integers.
+"""
+
 
 def add_integer(a, b=98):
-    """Function Computes sum.
+    """
+    Method executes type conversion of
+    arguments, calculates and returns
+    their sum.
 
     Args:
-        a: first parameter
-        b: second parameter
-
-    Returns:
-        Sum of two integers.
+        a: an integer or float.
+        b: an integer or float.
 
     Raises:
-        TypeError: if args are not integers or floats.
+        TypeError: both operands must be integers.
 
+    Returns:
+        sum of two integers.
     """
 
-    if not isinstance(a, int) and not isinstance(a, float):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, int) and not isinstance (b, float):
-        raise TypeError("b must be an integer")
+    if a is None or (type(a) is not int and type(a) is not float):
+        raise TypeError('a must be an integer')
+    else:
+        a = int(a)
 
-    a = int(a)
-    b = int(b)
+    if b is None or (type(b) is not int and type(b) is not float):
+        raise TypeError('b must be an integer')
+    else:
+        b = int(b)
+
     return a + b
