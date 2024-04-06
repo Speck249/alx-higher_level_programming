@@ -1,24 +1,29 @@
 #!/usr/bin/python3
-"""Module presents function that prints first and last name."""
+"""
+Module implements function that
+prints string.
+"""
+
 
 def say_my_name(first_name, last_name=""):
-    """Returns first and last name.
+    """
+    Function prints first and last name
+    to console.
 
     Args:
-        first_name: first parameter
-        last_name: second parameter
+        first_name: first string argument.
+        last_name: second string argument.
+
+    Raises:
+        TypeError: arguments must be string.
 
     Returns:
         Prints first and last name to console.
+    """
 
-   Raises:
-        TypeError: if args are not strings.
+    if type(first_name) is not str:
+        raise TypeError('first_name must be a string')
+    if type(last_name) is not str:
+        raise TypeError('last_name must be a string')
 
-   """
-
-    if not isinstance(first_name, str):
-        raise TypeError("first_name must be a string")
-    if not isinstance(last_name, str):
-        raise TypeError("last_name must be a string")
-
-    print("My name is {} {}".format(first_name, last_name))
+    print(f'My name is {first_name} {last_name}')
