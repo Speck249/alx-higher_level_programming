@@ -7,7 +7,7 @@ returns sum of two integers.
 
 def add_integer(a, b=98):
     """
-    Method executes type conversion of
+    Function executes type conversion of
     arguments, calculates and returns
     their sum.
 
