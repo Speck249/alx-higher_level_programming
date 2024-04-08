@@ -15,7 +15,6 @@ No argument:
 
 One argument:
     >>> say_my_name('Bob')
-    Traceback (most recent call last):
     My name is Bob
 
 Numerical value:
@@ -28,7 +27,7 @@ Numerical value:
     TypeError: last_name must be a string
 
 False string:
-    >>> say_my_name('12', Marley')
+    >>> say_my_name('12', 'Marley')
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
