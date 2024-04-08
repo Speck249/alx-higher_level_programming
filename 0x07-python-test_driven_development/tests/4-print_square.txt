@@ -1,0 +1,41 @@
+Outlines executable tests to validate `print_square()`
+=======================================================
+
+Import `print_square()` module:
+    >>> print_square = __import__('print_square()').print_square
+
+
+Validate expected output of `print_square()`:
+--------------------------------------------
+
+No argument:
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+Valid usage: 
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Negative integer value:
+    >>> print_square(-4)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+Float value:
+    >>> print_square(1.1)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Negative float value:
+    >>> print_square(-1.1)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+String value:
+    >>> print_square('school')
+    Traceback (most recent call last):
+    TypeError: size must be an integer
