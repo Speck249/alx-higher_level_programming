@@ -1,12 +1,12 @@
 Outlines executable tests to validate `say_my_name()`
-=====================================================
+====================================================
 
 Import `3-say_my_name` module:
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 
 Validate expected output of `say_my_name()`:
---------------------------------------------
+-------------------------------------------
 
 No argument:
     >>> say_my_name()
