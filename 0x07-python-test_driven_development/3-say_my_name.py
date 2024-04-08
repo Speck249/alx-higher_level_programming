@@ -21,9 +21,12 @@ def say_my_name(first_name, last_name=""):
         Prints first and last name to console.
     """
 
-    if type(first_name) is not str:
+    if not isinstance(first_name, str)\
+            or first_name.isalpha() is False:
         raise TypeError('first_name must be a string')
-    if type(last_name) is not str:
+
+    if last_name and (not isinstance(last_name, str)
+                      or last_name.isalpha() is False):
         raise TypeError('last_name must be a string')
 
-    print(f'My name is {first_name} {last_name}')
+    return f'My name is {first_name} {last_name}'
