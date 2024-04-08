@@ -29,4 +29,4 @@ def say_my_name(first_name, last_name=""):
                       or last_name.isalpha() is False):
         raise TypeError('last_name must be a string')
 
-    return f'My name is {first_name} {last_name}'
+    print(f'My name is {first_name} {last_name}')
