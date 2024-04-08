@@ -2,7 +2,7 @@ Outlines executable tests to validate `print_square()`
 =======================================================
 
 Import `print_square()` module:
-    >>> print_square = __import__('print_square()').print_square
+    >>> print_square = __import__('4-print_square').print_square
 
 
 Validate expected output of `print_square()`:
