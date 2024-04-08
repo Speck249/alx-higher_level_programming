@@ -1,32 +1,32 @@
 #!/usr/bin/python3
-"""Module presents function that prints a square."""
+"""
+Module implements function that
+prints square to console.
+"""
+
 
 def print_square(size):
-    """Prints a square to console.
+    """
+    Function accepts square length
+    and prints accordingly.
 
     Args:
-        size - length of the square.
+        size: size/length of square.
+
+    Raise:
+        TypeError: size must be integer.
+        ValueError: size must be greater than 0.
 
     Returns:
-        no return value
-
-    Raises:
-        TypeError: if size is not an int and less than 0.
-        ValueError: if size is less than 0.
-
+        Prints square to console.
     """
 
-    if not isinstance(size, int):
-        raise TypeError("size must be an integer")
+    if type(size) is not int:
+        raise TypeError('size must be an integer')
     if size < 0:
-        raise ValueError("size must be >= 0")
-    if isinstance(size, float) and size < 0:
-        raise TypeError("size must be an integer")
+        raise ValueError('size must be >= 0')
 
-    if size == 0:
-        print("")
-    
-    for i in range(size):
-        for j in range(size):
-            print("#", end="")
+    for row in range(size):
+        for columns in range(size):
+            print('#', end='')
         print()
