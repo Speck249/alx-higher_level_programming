@@ -9,15 +9,15 @@ import json
 
 def to_json_string(my_obj):
     """
-    Function takes in Python object, converts
-    it into its string representation in JSON
-    format and returns output.
+    Function accepts Python object, and
+    returns its string representation in
+    JSON format.
 
     Args:
         my_obj: Python object.
 
     Returns:
-        string representation of object.
+        JSON string.
     """
 
     return json.dumps(my_obj)
