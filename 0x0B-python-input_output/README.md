@@ -1,16 +1,23 @@
 # Python Input/Output
 
 ## Learning Objectives
-* Text mode vs Binary mode files
-* File object modes ('r', 'w', 'r+', 'b')
+* Text mode vs Binary mode
+* Python file object modes
 * What is the default File mode?
+* File object Methods
 * Opening file with open() function
+* File Handler as an interface
 * Relative path vs Absolute path
-* System resource release with 'close'
-* Context managers and 'with' Statement
+* System resource release via close() method
+* Context managers and Cleanup actions
+* 'with' Statement vs close() method
 * Exception Handling in I/O Operations
 * Optimum resource management
 * File system operations
+* What is JvaScript Object Notation?
+* Encoding JSON files
+* Using the JSON module
+* Serialization and Deserialization
 
 ### Project Requirements
 * Editors: vi, vim, or emacs
