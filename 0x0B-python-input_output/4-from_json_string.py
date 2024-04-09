@@ -1,17 +1,22 @@
 #!/usr/bin/python3
-"""Module presents function that returns Python object."""
+"""
+Module implements function that
+deserializes JSON string.
+"""
+
 import json
 
 
 def from_json_string(my_str):
-    """Function returns Python object.
+    """
+    Function accepts JSON string, deconstructs
+    and returns original Python object.
 
     Args:
-        my_str: parameter.
+        my_str: JSON string
 
     Returns:
-        Python data structures.
+        Python object
     """
 
-    json_obj = json.loads(my_str)
-    return json_obj
+    return json.loads(my_str)
