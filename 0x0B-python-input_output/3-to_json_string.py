@@ -1,17 +1,23 @@
 #!/usr/bin/python3
-"""Module presents function that creates JSON format."""
+"""
+Module implements function that
+serializes Python object.
+"""
+
 import json
 
 
 def to_json_string(my_obj):
-    """Function converts object to string representation.
+    """
+    Function takes in Python object, converts
+    it into its string representation in JSON
+    format and returns output.
 
     Args:
-        my_obj: parameter.
+        my_obj: Python object.
 
     Returns:
-        JSON representation of object.
+        string representation of object.
     """
 
-    json_obj = json.dumps(my_obj, sort_keys=True)
-    return json_obj
+    return json.dumps(my_obj)
