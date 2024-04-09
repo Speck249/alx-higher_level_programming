@@ -1,20 +1,23 @@
 #!/usr/bin/python3
-"""Module presents function that writes into file."""
+"""
+Module implements function that
+populates and counts file content.
+"""
 
 
 def write_file(filename="", text=""):
-    """Function writes into file.
+    """
+    Function writes into file, counts and
+    returns characters written into file.
 
     Args:
        filename: to be written into.
-       text: to be written into file.
+       text: indended file content.
 
     Returns:
-       length of text.
+       length of file content.
     """
 
-    with open(filename, 'w', encoding="utf-8") as f:
-        new_file = f.write(text)
-        return new_file
-
-    f.close()
+    with open(filename, 'w', encoding='UTF=8') as file:
+        content_count = file.write(text)
+        return content_count
