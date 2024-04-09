@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module implements function that saves
-deserialized Python object in a file.
+serialized Python object in a file.
 """
 
 import json
@@ -14,11 +14,11 @@ def save_to_json_file(my_obj, filename):
     then saves it inside target file.
 
     Args:
-        my_obj: to be converted into JSON string.
+        my_obj: Python object.
         filename: target destination.
 
     Returns:
-        file with JSON string.
+        JSON string.
     """
 
     with open(filename, 'w', encoding='UTF-8') as file:
