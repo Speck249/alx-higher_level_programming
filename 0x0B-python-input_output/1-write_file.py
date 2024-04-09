@@ -12,7 +12,7 @@ def write_file(filename="", text=""):
 
     Args:
        filename: to be written into.
-       text: indended file content.
+       text: content to be written into file.
 
     Returns:
        length of file content.
