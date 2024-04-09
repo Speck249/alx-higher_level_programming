@@ -14,7 +14,7 @@
 * Exception Handling in I/O Operations
 * Optimum resource management
 * File system operations
-* What is JvaScript Object Notation?
+* What is JavaScript Object Notation?
 * Encoding JSON files
 * Using the JSON module
 * Serialization and Deserialization
