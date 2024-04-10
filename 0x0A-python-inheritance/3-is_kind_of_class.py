@@ -1,23 +1,21 @@
 #!/usr/bin/python3
-"""Module presents function that checks for subclass."""
+"""
+Module implements function that
+checks for instance.
+"""
 
 
 def is_kind_of_class(obj, a_class):
-    """Function checks whether object is instance
-    of a class and inherited class.
+    """
+    Function validates object as
+    instance of class or subclass.
 
     Args:
-        obj: first parameter
-        a_class: second parameter
+        obj: class instance
+        a_class: class.
 
     Returns:
         Boolean value.
-
-    Raises:
-        no exceptions are raised.
     """
 
-    if isinstance(obj, a_class):
-        return True
-    else:
-        return False
+    return isinstance(obj, a_class)
