@@ -1,31 +1,35 @@
 #!/usr/bin/python3
-"""Module presents method that validates value."""
+"""
+Module defines instance method.
+"""
 
 
 class BaseGeometry:
-    """Creates an empty class."""
+    """
+    Creates new class.
+    """
 
     def area(self):
-        """Class method not implemented."""
+        """
+        Instance method raises an exception.
+        """
 
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """Method validates value.
+        """
+        Instance method validates value.
 
         Args:
-            name: name of value
+            name: name
             value: to be validated
- 
-        Returns:
-            no return value
 
         Raises:
-            TypeError: if value is not an integer
-            ValueError: if value <= 0
+            TypeError: value must be an integer
+            ValueError: value must be non-zero positive int.
         """
 
         if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
+            raise TypeError(f'{name} must be an integer')
         if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+            raise ValueError(f'{name} must be greater than 0')
