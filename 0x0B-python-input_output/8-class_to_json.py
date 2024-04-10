@@ -7,7 +7,7 @@ returns dictionary description.
 
 def class_to_json(obj):
     """
-    Function accepts class instance, 
+    Function accepts class instance,
     converts object attributes to
     dictionary format in preparation
     for JSON serialization.
