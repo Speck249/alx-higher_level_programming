@@ -21,4 +21,4 @@ class MyList(list):
             new list sorted in ascending order.
         """
 
-        return sorted(self)
+        print(sorted(self))
