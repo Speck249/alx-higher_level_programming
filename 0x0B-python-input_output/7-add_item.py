@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
 Module converts Python Objects to JSON Strings.
-Output file with Object or String content is passed
-to 'load' function to ensure Object type. Output is
-appended to a new list. Otherwise, user passed args
-are appended. The list Object is passed to the 'save'
+Output file with serialized Object content is passed
+to 'load' function for deserialization. Output is
+appended to new list. Otherwise, user passed args are
+appended. The list Object is passed to the 'save'
 function, converted to JSON format and saved to file.
 """
 
