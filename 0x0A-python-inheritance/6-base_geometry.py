@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-"""Module creates empty class."""
+"""
+Module defines instance method.
+"""
 
 
 class BaseGeometry:
-    """Creates an empty class."""
+    """
+    Creates new class.
+    """
 
     def area(self):
-        """Class method not implemented."""
+        """
+        Instance method raises an exception.
+        """
 
         raise Exception("area() is not implemented")
