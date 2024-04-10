@@ -1,15 +1,24 @@
 #!/usr/bin/python3
-"""Module presents sorting method."""
+"""
+Module creates child class with
+method for sorting.
+"""
+
 
 class MyList(list):
-    """Creates child class."""
+    """
+    Class MyList inherits from list.
+    """
 
     def print_sorted(self):
-        """Methods sorts list.
+        """
+        Instance method sorts list.
+
+        Args:
+            instance: list of integers.
 
         Returns:
-            sorted list.
+            new list sorted in ascending order.
         """
 
-        result = sorted(self)
-        print(result)
+        return sorted(self)
