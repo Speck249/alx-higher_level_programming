@@ -1,17 +1,28 @@
 #!/usr/bin/python3
-"""Module inherits from Rectanlge."""
+"""
+Module creates subclass of Rectangle.
+"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Class inherits from Rectangle."""
-
+    """
+    Creates a new subclass that inherits
+    from Rectangle.
+    """
     def __init__(self, size):
-        """Method instantiates class."""
+        """
+        Constructor method initializes class
+        with private attribute.
 
-        self.integer_validator("size", size)
-        """Validates value of size."""
+        Arg:
+           size: size of the square.
 
-        super().__init__(size, size)
+        Raises:
+            TypeError: size must be positive int.
+        """
+
         self.__size = size
-        """Sets private class instance."""
+        self.integer_validator('size', size)
+        super().__init__(size, size)
