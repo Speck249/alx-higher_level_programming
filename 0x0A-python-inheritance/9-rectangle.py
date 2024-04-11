@@ -1,31 +1,45 @@
 #!/usr/bin/python3
-"""Module inherits from Base Geometry."""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""
+Module implements parent instance
+methods for subclass.
+"""
+
+BaseGeometry = __import__('8-rectangle').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Class inherits from Base Geometry."""
-
+    """
+    Creates new subclass that inherits
+    from BaseGeometry.
+    """
     def __init__(self, width, height):
-        """Method instantiates class."""
+        """
+        Constructor method initializes class
+        with private attributes.
 
-        super().integer_validator("width", width)
-        self.__width = width
-        """validates value of width."""
+        Args:
+            width: width of the rectangle.
+            height: height of the rectangle.
 
-        super().integer_validator("height", height)
-        self.__height = height
-        """validates value of height."""
-
-    def area(self):
-        """Computes area of rectanlge.
-        Returns: area of rectangle
+        Raises:
+            TypeError: width must be positive int.
+            TypeError: height must be positive int.
         """
 
-        result = self.__width * self.__height
-        return result
+        self.__width = width
+        self.integer_validator('width', width)
+
+        self.__height = height
+        self.integer_validator('height', height)
+
+    def area(self):
+        """
+        Instance method returns area of rectangle.
+        """
+        return self.__width * self.__height
 
     def __str__(self):
-        """Dunder method returns string representation."""
-
-        return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
+        """
+        Instance method returns string representation.
+        """
+        return f'[{self.__class__.__name__}] {self.__width}/{self.__height}'
