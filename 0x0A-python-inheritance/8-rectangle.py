@@ -21,8 +21,8 @@ class Rectangle(BaseGeometry):
             height: height of rectangle.
 
         Raises:
-            TypeError: if width is not a positive int.
-            TypeError: if height is not a positive int.
+            TypeError: width must be positive int.
+            TypeError: height must be positive int.
         """
 
         self.__width = width
