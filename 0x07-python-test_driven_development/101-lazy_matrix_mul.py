@@ -45,6 +45,12 @@ def lazy_matrix_mul(m_a, m_b):
         if type(val) is not list:
             raise TypeError('matrix must be list of lists')
 
+    m_a_dimension = np.array(m_a)
+    m_b_dimension = np.array(m_b)
+
+    if m_a_dimension.shape[1] != m_b_dimension.shape[0]:
+        raise TypeError('matrices must have compatible dimensions')
+
     for val in m_a:
         for num in val:
             if type(num) is not int and type(num) is not float:
@@ -54,11 +60,5 @@ def lazy_matrix_mul(m_a, m_b):
         for num in val:
             if type(num) is not int and type(num) is not float:
                 raise TypeError('matrix lists must contain int or float')
-
-    m_a_dimension = np.array(m_a)
-    m_b_dimension = np.array(m_b)
-
-    if m_a_dimension.shape[1] != m_b_dimension.shape[0]:
-        raise TypeError('matrices must have compatible dimensions')
 
     return np.dot(m_a, m_b)
