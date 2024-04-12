@@ -13,21 +13,21 @@ def lazy_matrix_mul(m_a, m_b):
     returns product with dot notation multiplication.
 
     Args:
-        m_a: first matrix
-        m_b: second matrix
+        m_a: first matrix operand.
+        m_b: second matrix operand.
 
     Raises:
-        TypeError: matrices must be list of lists.
-                   matrices must contain int or float elements.
+        TypeError: matrix must be list of lists.
+                   matrices must contain int or float values.
                    matrices must have compatible dimensions.
-        ValueError: neither matrices must not be empty.
+        ValueError: neither matrices must be empty.
 
     Returns:
         Product of two matrices.
     """
 
     if type(m_a) is not list and type(m_b) is not list:
-        raise TypeError('matrix must be of type list')
+        raise TypeError('matrix must be a list')
 
     for val in m_a:
         if len(val) == 0:
@@ -48,12 +48,12 @@ def lazy_matrix_mul(m_a, m_b):
     for val in m_a:
         for num in val:
             if type(num) is not int and type(num) is not float:
-                raise TypeError('matrix lists must contain int or float.')
+                raise TypeError('matrix lists must contain int or float')
 
     for val in m_b:
         for num in val:
             if type(num) is not int and type(num) is not float:
-                raise TypeError('matrix lists must contain int or float.')
+                raise TypeError('matrix lists must contain int or float')
 
     m_a_dimension = np.array(m_a)
     m_b_dimension = np.array(m_b)
