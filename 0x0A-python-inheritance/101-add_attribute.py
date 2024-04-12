@@ -1,21 +1,31 @@
 #!/usr/bin/python3
-"""Module assigns new attribute to object."""
+"""
+Module implments function assigning
+new attribute to object.
+"""
 
 
-def add_attribute(my_obj, name, value):
-    """Method sets new attribute to object
-    if attribute doesn't already exist.
+def add_attribute(obj, name, value):
+    """
+    Method accepts instance, new attribute
+    name and corresponding value. It validates
+    if instance supports dynamic attribute
+    assignment. Otherwise, it raises an error.
 
     Args:
-        my_obj: to be assigned an attribute
-        name: attribute name
-        value: attribute value
+        obj: instance of a class.
+        name: new attribute name.
+        value: new attribute value.
 
     Raises:
-        TypeError: for exisitng attribute
+        TypeError: instance must support dynamic
+                   attribute assignment.
+
+    Returns:
+        new attribute value.
     """
 
-    if not hasattr(my_obj, '__dict__'):
-        raise TypeError("can't add new attribute")
-    else:
-        setattr(my_obj, name, value)
+    if not hasattr(obj, '__dict__'):
+        raise TypeError('can\'t add new attribute')
+
+    setattr(obj, name, value)
