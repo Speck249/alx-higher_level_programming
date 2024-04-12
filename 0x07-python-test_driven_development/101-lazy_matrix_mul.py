@@ -20,6 +20,7 @@ def lazy_matrix_mul(m_a, m_b):
         TypeError: matrices must be list of lists.
                    matrices must contain int or float elements.
                    matrices must have compatible dimensions.
+        ValueError: neither matrices must not be empty.
 
     Returns:
         Product of two matrices.
@@ -27,6 +28,14 @@ def lazy_matrix_mul(m_a, m_b):
 
     if type(m_a) is not list and type(m_b) is not list:
         raise TypeError('matrix must be of type list')
+
+    for val in m_a:
+        if len(val) == 0:
+            raise ValueError('matrix must not be empty')
+
+    for val in m_b:
+        if len(val) == 0:
+            raise ValueError('matrix must not be empty')
 
     for val in m_a:
         if type(val) is not list:
