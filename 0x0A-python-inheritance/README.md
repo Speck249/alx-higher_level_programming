@@ -1,18 +1,19 @@
 # Inheritance
 
 ## Learning Objectives
-* Super Class vs Subclass
+* Built-in classes vs User defined classes
+* Super Class and Subclass
+* Default Baseclass for all classes
 * Understanding Inheritance
 * Definig class with multiple Base classes
 * Attribute and Method inheritance
-* Listing all class attributes and methods
-* Listing all object attributes and methods
+* Attributes and methods available by heritage to subclasses
+* Listing instance attributes
+* Dynamic attribute assignment
+* Listing instance attributes and methods
 * Usage of inherited methods by subclasses
 * Overriding inherited attributes or methods
 * Implementation of inherited method templates
-* Default class of inheritance for all classes
-* When can instances have new attributes?
-* Attributes and methods available by heritage to subclasses
 * Python built-in class functions
 
 ### Project Requirements
