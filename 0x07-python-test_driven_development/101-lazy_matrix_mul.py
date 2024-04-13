@@ -61,4 +61,4 @@ def lazy_matrix_mul(m_a, m_b):
             if type(num) is not int and type(num) is not float:
                 raise TypeError('matrix lists must contain int or float')
 
-    return np.dot(m_a, m_b)
+    return (np.dot(m_a, m_b)).tolist()
