@@ -1,0 +1,79 @@
+Outlines executable tests to validate `lazy_matrix_mul()`
+=======================================================
+
+Import `101-lazy_matrix_mul` module:
+    >>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+
+Validate expected output of `lazy_matrix_mul()`:
+--------------------------------------------
+
+No argument:
+    >>> lazy_matrix_mul()
+    Traceback (most recent call last):
+    TypeError: lazy_matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+One argument:
+    >>> m_a = [[1,2]]
+    >>> lazy_matrix_mul(m_a)
+    Traceback (most recent call last):
+    TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_b'
+
+
+Invalid argument length:
+    >>> m_a = [[1,2]]
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> m_c = [[7, 8]]
+    >>> lazy_matrix_mul(m_a, m_b, m_c)
+    Traceback (most recent call last):
+    TypeError: lazy_matrix_mul() takes 2 positional arguments but 3 were given
+
+
+Empty argument:
+    >>> m_a = [[1, 2]]
+    >>> m_b = [[]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    Traceback (most recent call last):
+    ValueError: matrix must not be empty
+
+
+Valid usage: 
+    >>> m_a = [[1,2]]
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    [[13, 16]]
+
+
+Float value:
+    >>> m_a = [[1.1, 2.2]]
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    [[14.3, 17.6]]
+
+Negative value:
+    >>> m_a = [[1, -2]]
+    >>> m_b = [[3, -4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    [[-7, -16]]
+
+
+Multiplication by String:
+    >>> m_a = 'School'
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    Traceback (most recent call last):
+    TypeError: matrix must be list of lists
+
+Multiplication by String:
+    >>> m_a = [['1', 2]]
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    Traceback (most recent call last):
+    TypeError: matrix lists must contain int or float
+
+Incompatible matrix dimensions:
+    >>> m_a = [[1, 2, 3]]
+    >>> m_b = [[3, 4], [5, 6]]
+    >>> lazy_matrix_mul(m_a, m_b)
+    Traceback (most recent call last):
+    TypeError: matrices must have compatible dimensions
