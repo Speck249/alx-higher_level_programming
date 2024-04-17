@@ -11,13 +11,22 @@ class TestMaxInteger(unittest.TestCase):
     def test_empty_list(self):
         """ Validate outcome for empty list. """
         self.assertEqual(max_integer([]), None)
+        self.assertEqual(max_integer(""), None)
 
-    def test_unsorted_integers(self):
-        """ Validate outcome for integer list. """
+    def test_single_element_list(self):
+        """ Validate outcome for single element list. """
+        self.assertEqual(max_integer([4]), 4)
+
+    def test_max_at_beginning(self):
+        """ Validate outcome for max at beginning of list. """
+        self.assertEqual(max_integer([7, 3, 2, 0]), 7)
+
+    def test_unsorted_list(self):
+        """ Validate outcome for unsorted list. """
         self.assertEqual(max_integer([4, 5, 1, 3]), 5)
 
-    def test_sorted_integers(self):
-        """ Validate outcome for sorted integer list. """
+    def test_sorted_list(self):
+        """ Validate outcome for sorted list. """
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
 
     def test_neg_integers(self):
@@ -38,7 +47,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_string_int_values(self):
         """ Validate outcome for list of string and integer values. """
-        self.assertRaises(TypeError, max_integer, ['school', 5, 3])
+        self.assertRaises(TypeError, max_integer, ['school', 5, 3, '7'])
 
 
 if __name__ == '__main__':
