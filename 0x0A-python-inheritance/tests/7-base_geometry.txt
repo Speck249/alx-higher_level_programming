@@ -1,0 +1,62 @@
+Outlines executable tests to validate Base Geometry module
+==========================================================
+
+Import `7-base_geometry` module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Validate expected outputs:
+------------------------------------------
+
+Object Instantiation:
+     >>> bg = BaseGeometry()
+     >>> print(type(bg))
+     <class '7-base_geometry.BaseGeometry'>
+
+
+Area method:
+     >>> bg = BaseGeometry()
+     >>> bg.area()
+     Traceback (most recent call last):
+     Exception: area() is not implemented
+
+
+Integer validator [no argument]:
+     >>> bg.integer_validator()
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+Integer validator [integer value]:
+     >>> bg.integer_validator("my_int", 12)
+
+
+Integer validator [zero]:
+     >>> try:
+     ...     bg.integer_validator("width", 0)
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [ValueError] width must be greater than 0
+
+
+Integer validator [negative value]:
+     >>> try:
+     ...     bg.integer_validator("width", -89)
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [ValueError] width must be greater than 0
+
+Integer validator [float value]:
+     >>> try:
+     ...     bg.integer_validator("width", 8.9)
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
+
+
+Integer validator [string value]:
+     >>> try:
+     ...     bg.integer_validator("name", "John")
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] name must be an integer
