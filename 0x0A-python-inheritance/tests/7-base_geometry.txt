@@ -60,3 +60,43 @@ Integer validator [string value]:
      ... except Exception as e:
      ...     print("[{}] {}".format(e.__class__.__name__, e))  
      [TypeError] name must be an integer
+
+
+Integer validator [tuple]:
+     >>> try:
+     ...     bg.integer_validator("width", (89,))
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
+
+
+Integer validator [list]:
+     >>> try:
+     ...     bg.integer_validator("width", [89])
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
+
+
+Integer validator [dict]:
+     >>> try:
+     ...     bg.integer_validator("width", {8,9})
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
+
+
+Integer validator [boolean]:
+     >>> try:
+     ...     bg.integer_validator("width", True)
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
+
+
+Integer validator [None]:
+     >>> try:
+     ...     bg.integer_validator("width", None)
+     ... except Exception as e:
+     ...     print("[{}] {}".format(e.__class__.__name__, e))  
+     [TypeError] width must be an integer
