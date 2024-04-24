@@ -1,2 +1,2 @@
--- SQL Query lists all tables of a databse
+-- Query lists all tables inside MySQL server database
 SHOW TABLES;
