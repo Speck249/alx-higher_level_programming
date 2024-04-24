@@ -1,3 +1,2 @@
--- SQL Query lists all rows of a table
--- All fields must be printed
+-- Query lists all rows of first_table inside hbtn_0c_0
 SELECT * FROM first_table;
