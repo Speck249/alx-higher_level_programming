@@ -1,3 +1,2 @@
--- SQL Query permenantly deletes database
--- Query will not fail if database doesn't exist
+-- Query permenantly deletes hbtn_0c_0
 DROP DATABASE IF EXISTS hbtn_0c_0;
