@@ -1,5 +1,6 @@
--- SQL Query creates new table
--- and inserts new values into table
+-- Query creates 'second_table' inside hbtn_0c_0
+-- Query inserts rows to second_table for 'id, name and score'
+-- Query creates new records
 CREATE TABLE IF NOT EXISTS second_table (
 id INT,
 name VARCHAR(256),
