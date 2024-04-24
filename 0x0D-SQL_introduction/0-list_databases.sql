@@ -1,2 +1,2 @@
--- SQL Query lists all databases.
+-- Query lists all databases on MYSQL server
 SHOW DATABASES;
