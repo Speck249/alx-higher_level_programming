@@ -1,3 +1,2 @@
--- Command updates a value in a table
--- using name instead of id
+-- Query updates value of score via name field
 UPDATE second_table SET score=10 WHERE name='Bob';
