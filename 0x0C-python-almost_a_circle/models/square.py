@@ -1,28 +1,48 @@
 #!/usr/bin/python3
-"""Method presents square methods."""
+"""
+Module creates class inheriting from
+Rectangle.
+"""
+
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Creates inherited class."""
+    """
+    Creates new subclass.
+    """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Method instantiates inherited class."""
+        """
+        Constructor call initializes class with
+        inherited private attributes.
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """Method returns string representation"""
-        return "[Square] ({:d}) {:d}/{:d} - {:d}"\
-            .format(self.id, self.x, self.y, self.width)
+        """
+        Prints string representation of square id,
+        dimension, and x-y coordinates to console.
+        """
+        return f'[Square] ({self.id}) {self.x}/{self.y} - {self.width}'
 
     @property
     def size(self):
-        """Method retrieves size."""
+        """
+        Getter method retrieves value of Rectangle
+        width for Square dimension.
+        """
         return self.width
 
     @size.setter
     def size(self, value):
-        """Method sets value of size."""
+        """
+        Setter method assigns new value to width
+        and height of rectangle.
+
+        Args:
+            value: new value for width and height.
+        """
 
         if type(value) is not int:
             raise TypeError('width must be an integer')
@@ -33,28 +53,22 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
-        """Method assigns arguments."""
+        """
+        Instance method updates square instance
+        attribute values.
+        """
 
-        length = len(args)
+        attr = ('id', 'size', 'x', 'y')
+        for idx in range(len(args)):
+            setattr(self, attr[idx], args[idx])
 
-        if args is not None and length != 0:
-            attributes = ['id', 'size', 'x', 'y']
-            for k in range(length):
-                if args[k] == 'size':
-                    setattr(self, 'width', args[k])
-                    setattr(self, 'height', args[k])
-                else:
-                    setattr(self, attributes[k], args[k])
-        else:
-            for name, value in kwargs.items():
-                if name == 'size':
-                    setattr(self, 'width', value)
-                    setattr(self, 'height', value)
-                else:
-                    setattr(self, name, value)
+        if not args:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
-        """Method returns dictionary representation of square"""
-
-        return {'id': self.id, 'size': self.size, 'x': self.x,
-                'y': self.y}
+        """
+        Instance method returns a dictionary of
+        attribute-value parie for Square class.
+        """
+        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
