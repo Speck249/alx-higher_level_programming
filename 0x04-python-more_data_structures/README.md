@@ -1,16 +1,12 @@
 # Data Structures: Set & Dictionary
 
 ## Learning Objectives
-* Arithmetic Operations on Lists
-* What are Sets & How to use them
-* Working with built-in Set Methods
-* Sets vs Lists
-* Iterating into Sets
-* What are Dictionaries & How to use them
-* Key-Value pair in Dictionaries
-* Working with built-in Dictionary Methods
-* Understanding the Lambda function
-* Using the Map, Reduce, Filter Functions
+* Dictionary and Sets
+* Dictionary vs Sets vs Lists
+* Dictionary Comprehensions
+* Built-in Dictionary methods
+* Built-in Set methods and operators
+* Map, Lambda, Filter, Reduce and Zip
 
 ## Project Requirements
 * Editors: vi, vim, or emacs
