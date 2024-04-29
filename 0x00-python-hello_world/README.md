@@ -2,12 +2,17 @@
 
 ## Learning Objectives
 * The birth of Python
+* The Python documentation
+* Python's REPL environment
 * Compilation vs Interpretation
-* Using the Python interpreter
+* The Python interpreter
 * Variables in Python
-* Python Data Types
-* Exploring String methods
-* Methods vs Functions
+* Dynamic typing in Python
+* Python data types
+* String immutability
+* String formatters and methods
+* Arithmetic operation with Strings
+* DeMorgan's Law
 * Exploring PEP8
 
 ## Project Requirements
