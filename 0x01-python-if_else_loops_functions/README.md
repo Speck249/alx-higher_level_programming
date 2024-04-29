@@ -2,15 +2,21 @@
 
 ## Learning Objectives
 * Using mnemonic variables
-* Inserting Comments
-* Understanding Arithmetic & Logical Operators
-* Creating Python Functions
+* Python's automatic memory management system
+* Inserting comments and docstrings
+* Python's built-in functions
+* Functions vs Methods
+* Parameters vs Arguments
+* Positional, Default and Keyword arguments
+* Variable Length Arguments
+* Function and variable scopes
 * Return values vs Side effects
-* Function & variable scopes
-* What is the Python traceback?
-* Working with Conditional Expressions
-* How to use match statements
-* Exploring 'for' & 'while' loops
+* Python's traceback
+* Control flow and Conditional Structures
+* If conditions, Match statements and Loops
+* Equality vs Identity Operators
+* Arithmetic, Logical and Conditional Operators
+* Magic calculations
 
 ## Project Requirements
 * Editors: vi, vim, or emacs
