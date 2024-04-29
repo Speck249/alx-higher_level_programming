@@ -1,14 +1,14 @@
 # Import and Modules
 
 ## Learning Objectives
-* What are Python Libraries
-* How to create custom Modules
-* How to import & use Python Modules
-* How to import & use Functions from Modules
-* How to use built-in Functions
-* How to use the ' __name__ == "__main__" ' idiom
-* Modules vs Packages
-* Working with Command Line Arguments
+* Scripts vs Programs
+* Python Libraries
+* Built-in vs third-party vs custom modules
+* The Module search path and namespace
+* Packages vs Modules vs Submodules
+* Module aliasing
+* Dynamic importing
+* Circular import
 
 ### Project Requirement
 * Editors: vi, vim, or emacs
