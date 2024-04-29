@@ -1,18 +1,16 @@
 # Data Structures: Lists & Tuples
 
 ## Learning Objectives
-* Data Structures & Algorithms (Big O)
-* Working with Python Data Structures
+* Data Structures and Algorithms
 * Abstraction (ADT) in Data Structures
-* What are Lists & How to use them
-* Getting familiar with built-in List Methods
+* Mutable and Immutable Data Structures
+* Lists and Ranges
+* Lists vs Stacks and Queues
+* Built-in List Methods
+* For statements with Lists
 * List Comprehension vs Generator Expressions
-* Lists vs Stacks & Queues
-* What are Tuples & How to use them
-* Getting familiar with built-in Tuple Methods
-* Tuples vs Lists
-* How to do Tuple packing
-* How to do Tuple/Sequence/Iterable unpacking
+* Built-in Tuple Methods
+* Tuple packing/unpacking
 
 ### Project Requirement
 * Editors: vi, vim, or emacs
