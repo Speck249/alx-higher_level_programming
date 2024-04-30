@@ -2,15 +2,10 @@
 
 ## Learning Objectives
 * Resource optimization
-* Mutabile object vs Immutabile object
-* Immutable object with potential to change
-* How does object reference work?
-* How does aliasing and sharing work?
-* Using equality and identity operator on objects
-* How to display variable identifiers?
+* Aliasing and sharing
+* Variable identifiers
 * Passing variables to functions
 * Shallow copy vs Deep copy vs Cloning
-* __slots__ attribute vs __setattr__ method
 
 ### Project Requirements
 * Editors: vi, vim, or emacs
