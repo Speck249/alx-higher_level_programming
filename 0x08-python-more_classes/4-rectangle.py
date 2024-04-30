@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module returns string representation of object.
+Module initializes new class and defines instance
+methods.
 """
 
 
@@ -24,8 +25,8 @@ class Rectangle:
 
     def __str__(self):
         """
-        Instance method returns string representation
-        for print(), str(), and repr().
+        Dunder method returns human readable string
+        representation of class instance.
         """
 
         res = ''
@@ -39,7 +40,8 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Instance method returns string representation of object.
+        Dunder method returns string representation for
+        class instance recreation or debugging.
         """
         return f'Rectangle({self.__width}, {self.__height})'
 
