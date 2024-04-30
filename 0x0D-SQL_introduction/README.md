@@ -1,17 +1,22 @@
 # Introduction to SQL
 
 ## Learning Objectives
-* What is a Database?
-* Relational vs Non-Relational Databases
+* Structured Query Language
+* ACID and CRUD
 * SQL vs NoSQL
+* Relational Database Management System
+* Relational vs Non-Relation Databases
 * Database Definition Language (DDL)
 * Database Manipulation Language (DML)
 * SQL Functions, Queries and Subqueries
-* Introduction to MySQL
+* Reserved SQL Keywords
+* Comments in SQL files
+* Installation and usage of MySQL
 
 ### Requirements
 * Editors: vi, vim, emacs
 * All SQL queries must have initial comments
+* All files will be executed on Ubuntu 20.4 using MySQL 8.0
 * SQL keywords must be in uppercase
 
 
