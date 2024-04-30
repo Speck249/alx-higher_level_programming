@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module defines instance method.
+Module defines instance methods.
 """
 
 
