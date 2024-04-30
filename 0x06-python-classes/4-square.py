@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module accesses and modifies value
-of private attribute.
+Module initializes class, defines instance, getter
+and setter methods.
 """
 
 
