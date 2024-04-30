@@ -40,6 +40,7 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """
-        Instance method returns string representation.
+        Dunder method returns human readable string
+        representation of class instance.
         """
-        return f'[{self.__class__.__name__}] {self.__width}/{self.__height}'
+        return f'[Rectangle] {self.__width}/{self.__height}'
