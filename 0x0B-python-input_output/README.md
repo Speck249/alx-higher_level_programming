@@ -2,8 +2,7 @@
 
 ## Learning Objectives
 * Text mode vs Binary mode
-* Python file object modes
-* What is the default File mode?
+* File object modes
 * File object Methods
 * Opening file with open() function
 * File Handler as an interface
@@ -14,9 +13,7 @@
 * Exception Handling in I/O Operations
 * Optimum resource management
 * File system operations
-* What is JavaScript Object Notation?
-* Encoding JSON files
-* Using the JSON module
+* JavaScript Object Notation module
 * Serialization and Deserialization
 
 ### Project Requirements
