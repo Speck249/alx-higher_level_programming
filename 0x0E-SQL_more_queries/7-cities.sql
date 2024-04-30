@@ -1,6 +1,4 @@
--- SQL Query creates a new database and table with two attributes.
--- Query sets id as PRIMARY KEY.and state_id is set
--- Query sets state_id as FOREIGN KEY.
+-- Query creates new database and table with id (PK) and state_id (FK) attributes.
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (
 	id INT UNIQUE AUTO_INCREMENT NOT NULL,
