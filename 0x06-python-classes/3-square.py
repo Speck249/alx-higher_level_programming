@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module calculates and returns
-area of square.
+Module initializes new class and defines
+instance methods.
 """
 
 
