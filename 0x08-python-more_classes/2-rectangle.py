@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module returns area and perimeter of rectangle.
+Module initializes class and defines instance
+methods.
 """
 
 
