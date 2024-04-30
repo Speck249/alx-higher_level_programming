@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module initializes new class with private
-attributes, setter and getter methods.
+Module initializes new class and defines 
+instance methods.
 """
 
 
