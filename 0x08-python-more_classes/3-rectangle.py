@@ -25,8 +25,8 @@ class Rectangle:
 
     def __str__(self):
         """
-        Instance method returns string representation of
-        object for print(), str(), and repr().
+        Dunder method returns human readable string
+        representation of class instance.
         """
 
         res = ''
