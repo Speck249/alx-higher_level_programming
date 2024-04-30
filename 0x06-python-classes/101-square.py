@@ -12,7 +12,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Instantiates new class wits private attributes.
+        Constructor method initializes class
+        with private attribute.
 
         Args:
             size: size of the square.
@@ -23,22 +24,31 @@ class Square:
 
     def __str__(self):
         """
-        Method returns string representation of object.
+        Dunder method returns human readable string
+        representation of class instance.
         """
         return '{}'.format(self.my_print())
 
     @property
     def size(self):
         """
-        Method retrieves size of square.
+        Getter method retrieves size of square.
         """
         return self.__size
 
     @size.setter
     def size(self, value):
         """
-        Method modifies size of square.
-          """
+        Setter method modifies size of square.
+
+        Args:
+            value: new value of square size.
+
+        Raises:
+            TypeError: size must be an integer.
+            ValueError: size must be positive.
+        """
+
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -48,14 +58,20 @@ class Square:
     @property
     def position(self):
         """
-        Method retrieves position of square
+        Getter method retrieves position of square
         """
         return self.__position
 
     @position.setter
     def position(self, value):
         """
-        Method modifies position of square.
+        Setter method modifies position of square.
+
+        Args:
+            value: new position for square.
+
+        Raises:
+            TypeError: position must be a tuple of two positive integers.
         """
         if (
                 len(value) != 2 or
@@ -68,13 +84,15 @@ class Square:
     def area(self):
         """
         Calculate area of the square from given size.
-        Returns: area of the square.
+
+        Returns:
+            area of the square.
         """
         return self.__size ** 2
 
     def my_print(self):
         """
-        Method prints square along the x, y coordinate.
+        Instance method prints square along x, y coordinate.
         """
         if self.__size == 0:
             print()
