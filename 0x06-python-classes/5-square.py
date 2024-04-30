@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module prints square to the console.
+Module initializes class, defines instance methods.
 """
 
 
