@@ -17,7 +17,7 @@
 * Dictionary representation
 * Serialization and Deserialization
 * File Input/Output
-
+* Unittest and PEP8 validation
 
 ### Requirements
 * Editors: vi, vim, or emacs
