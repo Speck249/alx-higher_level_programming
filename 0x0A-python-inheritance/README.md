@@ -1,20 +1,17 @@
 # Inheritance
 
 ## Learning Objectives
-* Built-in classes vs User defined classes
+* Inheritance in Python
+* The Default Base class
+* Python introspection 
 * Super Class and Subclass
-* Default Baseclass for all classes
-* Understanding Inheritance
-* Definig class with multiple Base classes
-* Attribute and Method inheritance
-* Attributes and methods available by heritage to subclasses
-* Listing instance attributes
+* Class with multiple Base classes
+* Attribute and method inheritance
+* type() vs isinstance()
+* isinstance() vs issubclass()
 * Dynamic attribute assignment
-* Listing instance attributes and methods
-* Usage of inherited methods by subclasses
 * Overriding inherited attributes or methods
-* Implementation of inherited method templates
-* Python built-in class functions
+* Reserving memory for instance attributes
 
 ### Project Requirements
 * Editors: vi, vim, or emacs
