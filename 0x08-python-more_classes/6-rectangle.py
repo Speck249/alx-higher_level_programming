@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module returns number of existing instances
-following creation or deletion.
+Module initializes new class and defines instance
+methods.
 """
 
 
@@ -30,8 +30,8 @@ class Rectangle:
 
     def __str__(self):
         """
-        Instance method returns string representation
-        for print(), str(), and repr().
+        Dunder method returns human readable string
+        representation of class instance.
         """
 
         res = ''
@@ -45,14 +45,15 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Instance method returns string representation of object.
+        Dunder method returns string representation for
+        class instance recreation or debugging.
         """
         return f'Rectangle({self.__width}, {self.__height})'
 
     def __del__(self):
         """
         Destructor method executes cleanup before object
-        is removed from memory upon deletion.
+        is removed from memory following deletion.
         """
 
         print(f'Bye rectangle...')
