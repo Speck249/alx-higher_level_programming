@@ -1,5 +1,4 @@
--- SQL Query creates new database and table with two attributes.
--- Query sets id as PRIMARY KEY.
+-- Query creates new database and table with id (PK) and name attributes.
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.states (
 	id INT UNIQUE AUTO_INCREMENT NOT NULL,
