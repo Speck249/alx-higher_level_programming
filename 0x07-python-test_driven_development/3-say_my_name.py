@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Module implements function that
-prints string.
+Module implements function that prints string.
 """
 
 
@@ -29,4 +28,4 @@ def say_my_name(first_name, last_name=""):
                       or last_name.isalpha() is False):
         raise TypeError('last_name must be a string')
 
-    print(f'My name is {first_name} {last_name}')
+    print('My name is {} {}'.format(first_name, last_name))
