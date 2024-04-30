@@ -1,5 +1,4 @@
--- SQL Query lists all shows.
--- Query then lists all genres linked to show.
+-- Query lists all tv shows and corresponding genres.
 SELECT tv_shows.title, tv_genres.name
 FROM tv_shows
 LEFT JOIN tv_show_genres
