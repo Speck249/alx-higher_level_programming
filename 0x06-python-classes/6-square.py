@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module prints square to console
-along the x, y coordinate.
+Module initializes class and defines instance
+methods.
 """
 
 
