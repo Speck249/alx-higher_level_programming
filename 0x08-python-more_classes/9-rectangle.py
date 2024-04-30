@@ -28,20 +28,6 @@ class Rectangle:
 
         Rectangle.number_of_instances += 1
 
-    @classmethod
-    def square(cls, size=0):
-        """
-        Class method returns new Rectangle instance.
-
-        Args:
-            size: height and width values
-
-        Returns:
-            new Retangle instance with the same width,
-            height and size values.
-        """
-        return cls(size, size)
-
     def __str__(self):
         """
         Dunder method returns human readable string
@@ -176,3 +162,17 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """
+        Class method returns new Rectangle instance.
+
+        Args:
+            size: height and width values
+
+        Returns:
+            new Retangle instance with the same width,
+            height and size values.
+        """
+        return cls(size, size)
