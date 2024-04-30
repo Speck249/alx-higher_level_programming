@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module defines a new class,
-with private attribute.
+Module defines a new class, with private
+attribute.
 """
 
 
