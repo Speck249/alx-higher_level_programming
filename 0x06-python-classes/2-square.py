@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module initializes new class and
-enforces error checking.
+Module initializes new class and validates
+attribute value.
 """
 
 
