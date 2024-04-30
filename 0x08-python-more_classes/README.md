@@ -1,17 +1,12 @@
-# More Classes and Objects
+#More Classes and Objects
 
 ## Learning Objectives
-* What is the self variable?
-* self vs. other variable
-* Why use the __init__ method
-* What are __str__ and __repr__
-* How to use __str__ and __repr__
-* How to use eval() with __repr__
-* What is the use of __dict__
-* What is the destructor method
-* Class attribute vs. Instance attribute
-* Class method vs. Instance method vs Static method
-* Using the getattr function
+* Public class attributes
+* Dunder methods
+* str(), repr(), eval(), del 
+* Static vs Class methods
+* Dynamic arbitrary attributes creation
+* Binding attributes to classes and objects
 
 ### Project Requirements
 * Editors: vi, vim, or emacs
