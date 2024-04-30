@@ -1,14 +1,13 @@
 # Exceptions
 
 ## Learning Objectives
-* Python Excpetions vs Parsing Errors
-* Using built-in Exceptions
-* TypeError vs ValueError
-* Ignoring Exceptions with pass
-* Raise Exceptions with message
-* User defined Exceptions
-* The try / except  block
-* Clean-ups and freeing resources
+* Handling Exceptions vs Parsing Errors
+* Raise Exceptions with custom messages
+* Python Built-in exceptions
+* User defined exceptions
+* Ignoring exceptions with pass
+* try / except / finally / else
+* Clean-up after exceptions
 
 ### Project Requirements
 * Editors: vi, vim, or emacs
