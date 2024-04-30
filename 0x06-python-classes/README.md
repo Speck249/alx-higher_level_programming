@@ -1,24 +1,17 @@
-# Classes and Objects
+ Classes and Objects
 
 ## Learning Objectives
-* Introduction to Object Oriented Programming
-* What are classes, and objects?
-* What is the Constructor call?
-* Difference between Objects and Instances
-* What is an Attribute?
-* Public vs Private attributes
+* Object Oriented Programming
+* Classes and Objects
+* Python's object reference and Constructor call
+* Public, Protected and Private attributes
 * Single underscore prefix vs Name mangling
-* Difference between Attributes and Instance variables
-* What is a Method?
-* Difference between Instance Methods and Class Methods
-* Special Python Methods
-* Abstraction, Encapsulation and Inheritance
-* What is a Superclass?
-* Properties and Decorators
-* Difference between properties and attributes
-* Getters and Setters in Python
-* Dynamically creating arbitrary attributes for existing class instances
-* Binding attributes to classes and objects
+* Class vs Instance variables
+* Class vs Instance methods
+* Data Encapsulation and first-class objects
+* Python decorators, callbacks and closures
+* Property, getters and setters
+* Built-in and custom class decorators
 * Operator overloading
 
 ### Project Requirements
