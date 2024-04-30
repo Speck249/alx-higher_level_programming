@@ -1,5 +1,4 @@
--- SQL Query lists all genres by their rating.
--- Query sorts result by rating.
+-- Query lists all genres by sum of their ratings.
 SELECT tv_genres.name, SUM(tv_show_ratings.rate) AS rating
 FROM tv_genres
 JOIN tv_show_genres
