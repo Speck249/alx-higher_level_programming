@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module returns string representation
-of object.
+Module initializes class, defines instance method and
+returns string representation of object.
 """
 
 
