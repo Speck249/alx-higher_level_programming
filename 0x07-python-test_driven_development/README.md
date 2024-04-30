@@ -2,10 +2,9 @@
 
 ## Learning Objectives
 * Test Driven Development vs Behavior Driven Development
-* Non-Interactive vs Interactive Tests
-* The Unittest and Doctest Modules
-* What are Testing Framerworks?
-* Test suites vs Test case
+* Non-Interactive vs Interactive tests
+* Built-in Unittest and Doctest modules
+* Testing frameworks and Assertion libraries
 * Identifying Edge cases
 
 ### Project Requirements
