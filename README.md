@@ -1,7 +1,9 @@
 # Higher-Level Programming
 
 ## Course Description
-The ALX Full Stack Engineering Track's first 9 months aim to enable developers build a set of real-world, industry aligned skills. As the second sprint of the Foundations program, the Higher-Level Prgramming course is geared towards developing foundational understanding in Functional and Object-Oriented Programming with an in-depth exploration of Python, Backend JavaScript Programming and Relational Database Management with Structured Query Language (SQL). 'Project' in ALX refers to a compilation of practical tasks that students must complete. Each project contains a thorough guideline to navigating each given task, along with general outline of learning objectives and project requirements. The Higher Level Prgramming projects explore various fundamental building blocks of OOP languages like Abstraction, Inheritance, and Polymorphism through practical code challenges.
+The ALX Full Stack Engineering Track's first 9 months aim to build a set of real-world, industry aligned skills. As the second sprint of the Foundations program, the Higher-Level Prgramming course is geared towards developing foundational understanding in Functional and Object-Oriented Programming with a thorough exploration of Python, Backend JavaScript Programming and Relational Database Management with Structured Query Language (SQL). 
+
+Instead of the typical terminological usage, 'Project' in ALX refers to a compilation of practical tasks that test students' knowledge about curriculum specific topics. Each project must be completed within a 24 hour timeline and although projects may advance on an earlier subject area, no two projects focus on the same topic. Projects are packed with thorough guidelines, general outlines of learning objectives and requirements. The Higher Level Prgramming projects explore various fundamental building blocks of OOP languages like Data Structures, Abstraction, Inheritance, and Polymorphism through practical coding challenges. All files are interpreted/compiled on Ubuntu 20.04 LTS using python3, node (with an LTS version), and MySQL 8.x.
 
 ## Repository Content
 1. Python
