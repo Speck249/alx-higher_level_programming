@@ -7,7 +7,7 @@ Instead of the typical terminological usage, 'Project' in ALX refers to a compil
 
 The Higher-Level Prgramming projects explore various fundamental building blocks of OOP languages like Data Structures, Abstraction, Inheritance, and Polymorphism through practical coding challenges. 
 
-*All files are interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5), node (version 14.x), and MySQL (version 8.x).
+*All files are interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5), node (version 14.x), and MySQL (version 8.x)*
 
 ## Repository Content
 1. Python
