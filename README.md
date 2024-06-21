@@ -1,7 +1,7 @@
 # Higher-Level Programming
 
 ## Description
-The ALX Software Engineering track's first 9 months (Foundations) aim to build a set of real-world, industry aligned skills. As the second sprint of the Foundations program, the Higher-Level Programming section is geared towards developing foundational understanding in Functional and Object-Oriented Programming with a thorough exploration of Python, Backend JavaScript Programming and Relational Database Management with Structured Query Language (SQL). 
+ALX Software Engineering track's first 9 months (Foundations) aim to build a set of real-world, industry aligned skills. As the second sprint of the Foundations program, the Higher-Level Programming section is geared towards developing foundational understanding in Functional and Object-Oriented Programming with a thorough exploration of Python, Backend JavaScript Programming and Relational Database Management with Structured Query Language (SQL). 
 
 Instead of the typical terminological usage, 'Project' in ALX refers to a compilation of practical tasks that test students' knowledge about curriculum specific topics. Each project must be completed within a 24 hour timeline and although projects may advance on an earlier subject area, no two projects focus on the same topic. Projects are packed with thorough guidelines, general outlines of learning objectives and requirements. 
 
