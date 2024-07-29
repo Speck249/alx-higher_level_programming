@@ -1,4 +1,5 @@
 # Conditional Expressions, Loops and Functions
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Learning Objectives
 * Using mnemonic variables
@@ -24,5 +25,3 @@
 * Open script file with line >> #!/usr/bin/python3
 * Python script must pass pycodestyle (version 2.8.*)
 * Make Python scripts executable
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
