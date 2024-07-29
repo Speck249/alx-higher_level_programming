@@ -1,4 +1,5 @@
 # JavaScript Warmup
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## Learning Objectives
 * The birth of JavaScript
@@ -21,5 +22,3 @@
 * Open file with line >> #!/usr/bin/node
 * JavaScript files must pass semistandard
 * All scripts are executable
-
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
