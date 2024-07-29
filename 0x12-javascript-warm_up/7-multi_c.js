@@ -1,11 +1,10 @@
 #!/usr/bin/node
 
-const num_occurence = process.argv[2];
-
-if (!(parseInt(process.argv[2]))) {
+const max = Number.parseInt(process.argv[2]);
+if (!(max)) {
   console.log('Missing number of occurrences');
 } else {
-  for (let idx = 0; idx < num_occurence; idx++) {
+  for (i = 0; i < max; i++) {
     console.log('C is fun');
   }
 }
