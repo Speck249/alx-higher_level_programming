@@ -1,12 +1,10 @@
 #!/usr/bin/node
 
-square_size = parseInt(process.argv[2]);
-
-if (!(parseInt(square_size))) {
+const size = Number.parseInt(process.argv[2]);
+if (!(size)) {
   console.log('Missing size');
 } else {
-  for (idx = 0; idx < square_size; idx++) {
-    square = Array(square_size).fill('X').join('')
-    console.log(square)
+  for (i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
   }
 }
