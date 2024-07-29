@@ -1,11 +1,10 @@
 # Higher-Level Programming
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## Description
-ALX Software Engineering track's first 9 months (Foundations) aim to build a set of real-world, industry aligned skills. As the second sprint of the Foundations program, the Higher-Level Programming section is geared towards developing foundational understanding in Functional and Object-Oriented Programming with a thorough exploration of Python, Backend JavaScript Programming and Relational Database Management with Structured Query Language (SQL). 
+ALX Software Engineering track's first 9 months (Foundations) aim to build a set of real-world, industry aligned technical skills. As the second sprint of the Foundations program, the Higher-Level Programming section is geared towards developing foundational understanding in Functional and Object-Oriented Programming with a thorough exploration of Python, an introduction to JavaScript and Relational Database Management with Structured Query Language (SQL). 
 
-Instead of the typical terminological usage, 'Project' in ALX refers to a compilation of practical tasks that test students' knowledge about curriculum specific topics. Each project must be completed within a 24 hour timeline and although projects may advance on an earlier subject area, no two projects focus on the same topic. Projects are packed with thorough guidelines, general outlines of learning objectives and requirements. 
-
-The Higher-Level Prgramming projects explore various fundamental building blocks of OOP languages like Data Structures, Abstraction, Inheritance, and Polymorphism through practical coding challenges. 
+Instead of the typical terminological usage, 'Project' in ALX refers to a compilation of practical coding challenges that test students' knowledge about curriculum specific topics. Each project must be completed within a 24 hour timeline and although projects may advance on an earlier subject area, no two projects focus on the same topic. Each project comes with guidelines, general outlines of learning objectives and requirements. 
 
 *All files are interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5), node (version 14.x), and MySQL (version 8.x)*
 
@@ -37,6 +36,3 @@ The Higher-Level Prgramming projects explore various fundamental building blocks
 3. SQL
 * [0x0D-SQL_introduction](https://github.com/Speck249/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 * [0x0E-SQL_more_queries](https://github.com/Speck249/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
-
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
