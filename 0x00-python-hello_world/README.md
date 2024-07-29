@@ -1,4 +1,5 @@
 # Introduction to Programming with Python
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Learning Objectives
 * The birth of Python
@@ -23,5 +24,3 @@
 * Make Python scripts executable
 
 ### Be sure to check out [Zen of Python](https://peps.python.org/pep-0020/)
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
