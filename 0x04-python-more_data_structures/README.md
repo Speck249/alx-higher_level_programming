@@ -1,4 +1,5 @@
 # Data Structures: Set & Dictionary
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Learning Objectives
 * Dictionary and Sets
@@ -15,5 +16,3 @@
 * All files end with a new line
 * Python script must pass pycodestyle (version 2.8.*)
 * All scripts are executable
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
