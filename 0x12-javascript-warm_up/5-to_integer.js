@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
-const len = process.argv.length;
-const res = parseInt(process.argv[2]);
-
-if (len == 2 || (!res)) {
+const args = process.argv;
+const num = Number.parseInt(args[2]);
+if (args.length === 2 || !(num)) {
   console.log('Not a number');
 } else {
-  console.log(`My number: ${res}`);
+  console.log(`My number: ${num}`);
 }
