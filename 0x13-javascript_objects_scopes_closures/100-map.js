@@ -2,6 +2,6 @@
 
 const list = require('./100-data.js').list;
 
-const res = list.map((y, i) => y * i);
+const new_list = list.map((item, index) => item * index);
 console.log(list);
-console.log(res);
+console.log(new_list);
