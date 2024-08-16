@@ -7,12 +7,13 @@ class Square extends mainSquare {
     if (c === undefined) {
       c = 'X';
     }
-    let sq = '';
+
+    let square = '';
     for (let i = 0; i < this.width; i++) {
-      sq = sq + c;
+      square += c;
     }
     for (let i = 0; i < this.height; i++) {
-      console.log(sq);
+      console.log(square);
     }
   }
 }
