@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-let count = 0;
+let index = 0;
 exports.logMe = function (item) {
-  console.log(`${count}: ${item}`);
-  count++;
-};
+  console.log(`${index}: ${item}`);
+  index+=1;
+}
